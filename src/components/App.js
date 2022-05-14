@@ -1,14 +1,12 @@
+import banner from '../images/banner.png';
 import '../styles/App.scss';
 
 function App() {
   return (
     <div className="App">
-      <p>
-        LORENA GUARTAZACA - WEB DEVELOPER PORTAFOLIO
-      </p>
-      <span>
-          LOADING . . .
-      </span>
+      <img src={banner} className="App-logo" alt="logo" />
+
+
     </div>
   );
 }
