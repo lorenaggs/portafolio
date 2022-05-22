@@ -56,14 +56,43 @@ function App() {
               <section className="main_section" id="skills">
                 <h2 className="main_title skills">Skills</h2>
                 <div className="main_contain-skills">
-                  <img src={imagereact} alt="Icon React" />
-                  <img src={imagecss} alt="Icon Css" />
-                  <img src={imagesass} alt="Icon Sass" />
-                  <img src={imagejavascript} alt="Icon JavaScript" />
-                  <img src={imagenode} alt="Icon Node" />
-                  <img src={imagegithub} alt="Icon Github" />
-                  <img src={imagehtml} alt="Icon Html" />
-                  <img src={imagebootstrap} alt="Icon Bootstrap" />
+                  <img
+                    className="imageskills"
+                    src={imagereact}
+                    alt="Icon React"
+                  />
+                  <img className="imageskills" src={imagecss} alt="Icon Css" />
+                  <img
+                    className="imageskills"
+                    src={imagesass}
+                    alt="Icon Sass"
+                  />
+                  <img
+                    className="imageskills"
+                    src={imagejavascript}
+                    alt="Icon JavaScript"
+                  />
+
+                  <img
+                    className="imageskills"
+                    src={imagenode}
+                    alt="Icon Node"
+                  />
+                  <img
+                    className="imageskills"
+                    src={imagegithub}
+                    alt="Icon Github"
+                  />
+                  <img
+                    className="imageskills"
+                    src={imagehtml}
+                    alt="Icon Html"
+                  />
+                  <img
+                    className="imageskills"
+                    src={imagebootstrap}
+                    alt="Icon Bootstrap"
+                  />
                 </div>
               </section>
               {/* <section className="main_section" id="experience">
@@ -190,7 +219,7 @@ function App() {
             </div>
           </div>
           <ul className="menu">
-            <a className="menu__sections" href="./App.js#contactme">
+            {/* <a className="menu__sections" href="./App.js#contactme">
               contact
             </a>
             <a className="menu__sections" href="./App.js#profile">
@@ -198,7 +227,7 @@ function App() {
             </a>
             <a className="menu__sections" href="./App.js#experience">
               experience
-            </a>
+            </a> */}
             <a className="menu__sections" href="./App.js#skills">
               skills
             </a>
