@@ -255,6 +255,7 @@ body {
 
 .container__sinfooter {
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .avatar {
@@ -267,7 +268,8 @@ body {
   }
   .avatar {
     display: flex;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
   }
 }
