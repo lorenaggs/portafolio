@@ -228,10 +228,10 @@ function App() {
             <a className="menu__sections" href="./App.js#experience">
               experience
             </a> */}
-            <a className="menu__sections" href="./App.js#skills">
+            <a className="menu__sections" href="#skills">
               skills
             </a>
-            <a className="menu__sections" href="./App.js#aboutme">
+            <a className="menu__sections" href="#aboutme">
               about_me
             </a>
           </ul>
