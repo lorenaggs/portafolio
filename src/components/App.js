@@ -52,7 +52,7 @@ function App() {
               </section>
               <section className="main_section" id="skills">
                 <h2 className="main_title skills">Skills</h2>
-                <p className="main_contain-skills">
+                <div className="main_contain-skills">
                   <img src={imagereact} alt="Icon React" />
                   <img src={imagecss} alt="Icon Css" />
                   <img src={imagesass} alt="Icon Sass" />
@@ -61,39 +61,40 @@ function App() {
                   <img src={imagegithub} alt="Icon Github" />
                   <img src={imagehtml} alt="Icon Html" />
                   <img src={imagebootstrap} alt="Icon Bootstrap" />
-                </p>
+                </div>
               </section>
               <section className="main_section" id="experience">
                 <h2 className="main_title">Experience</h2>
-                <p className="main_contain experience">
+                <div className="main_contain experience">
                   <div className="textexperience adalab">
                     <img
                       className="imageadalab"
                       src={imageadalab}
                       alt="Adalab"
                     />
-                    <p>
+                    <div>
                       <h3 className="textexperience">
                         Adalab - Desarrollo front-end
                       </h3>
                       <p className="textexperience date">
                         feb. 2022 - actualidad • 4 meses
                       </p>
-                    </p>
+                    </div>
                   </div>
                   <p className="textexperience">
                     Programa integral de formación que aporta los conocimientos
                     y herramientas para el desarrollo web front-end.
                   </p>
-                </p>
-                <p className="main_contain experience">
+                </div>
+                <div className="main_contain experience">
                   <div className="textexperience adalab"></div>
-                </p>
+                </div>
               </section>
               <section className="main_section" id="profile">
                 <h2 className="main_title">Profile</h2>
-                <p className="main_contain profile">
+                <div className="main_contain profile">
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-open-space-html-scss/"
                   >
@@ -104,6 +105,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-project-about-us-HTML-SCSS/"
                   >
@@ -114,6 +116,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-spotify-HTML-CSS/"
                   >
@@ -124,6 +127,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-movies-owen-wilson-REACT/"
                   >
@@ -134,6 +138,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-frases-de-friends-JS/"
                   >
@@ -144,6 +149,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/create.html"
                   >
@@ -154,6 +160,7 @@ function App() {
                     />
                   </a>
                   <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://lorenaggs.github.io/adalab-cocteles-JS/"
                   >
@@ -163,16 +170,18 @@ function App() {
                       alt="Coktails"
                     />
                   </a>
-                </p>
+                </div>
               </section>
               <section className="main_section" id="contactme">
                 <h2 className="main_title">Contact me</h2>
-                {/* <p className="main_contain"> */}
-                <div className="contactmenow">
-                  <section className="main_imageprofilecontac contactme"></section>
-                  <p className="contactme__text">
-                    Contact <span className="contactme__textcolor">me now</span>
-                  </p>
+                <div className="main_contain">
+                  <div className="contactmenow">
+                    <section className="main_imageprofilecontac contactme"></section>
+                    <div className="contactme__text">
+                      Contact
+                      <span className="contactme__textcolor">me now</span>
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
@@ -199,12 +208,17 @@ function App() {
 
       <section className="icons">
         <a
+          rel="noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/lorena-guartazaca-b55a541b4/"
         >
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a target="_blank" href="https://github.com/lorenaggs?tab=repositories">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/lorenaggs?tab=repositories"
+        >
           <i className="fa-brands fa-github"></i>
         </a>
       </section>
