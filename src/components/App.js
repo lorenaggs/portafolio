@@ -7,14 +7,15 @@ import imagenode from "../images/node.png";
 import imagegithub from "../images/github.png";
 import "../styles/App.scss";
 import imagebootstrap from "../images/bootstrap.png";
-import imageadalab from "../images/logo-adalab.png";
-import imageopenspaces from "../images/openspaces.png";
-import imageaboutus from "../images/aboutus.png";
-import imagespotify from "../images/spotify.png";
-import imageowenwilson from "../images/owenwilson.png";
-import imagephrasefriends from "../images/phrasefriends.png";
-import imageawesomeprofile from "../images/awesomeprofile.png";
-import imagecocktails from "../images/cocktails.png";
+import avatar from "../images/avatar.png";
+// import imageadalab from "../images/logo-adalab.png";
+// import imageopenspaces from "../images/openspaces.png";
+// import imageaboutus from "../images/aboutus.png";
+// import imagespotify from "../images/spotify.png";
+// import imageowenwilson from "../images/owenwilson.png";
+// import imagephrasefriends from "../images/phrasefriends.png";
+// import imageawesomeprofile from "../images/awesomeprofile.png";
+// import imagecocktails from "../images/cocktails.png";
 
 function App() {
   return (
@@ -32,23 +33,25 @@ function App() {
                 <div className="imageMe"></div>
               </section>
             </main>
-            <p className="main__description">
+            <div className="main__description">
               I am &nbsp;
               <span className="write"> a creative.</span>
-            </p>
+            </div>
             <p className="main__description">frontend Developer</p>
             <div className="descriptionmenu">
-              <section className="main_section" id="aboutme">
-                <section className="main_containertitle">
-                  <h2 className="main_title">About me</h2>
-                  <div className="rectangle pink"></div>
-                </section>
-
-                <p className="main_contain">
-                  Hi, my name is Lorena Guartazaca, I am a professional who is
-                  reinventing herself in web developer with skills in backend.
-                </p>
-                <div className="rectangle blue"></div>
+              <section className="main_section aboutme" id="aboutme">
+                <div>
+                  <section className="main_containertitle">
+                    <h2 className="main_title">About me</h2>
+                    <div className="rectangle pink"></div>
+                  </section>
+                  <p className="main_contain">
+                    Hi, my name is Lorena Guartazaca, I am a professional who is
+                    reinventing herself in web developer with skills in backend.
+                  </p>
+                  <div className="rectangle blue"></div>
+                </div>
+                <img className="avatar" src={avatar} alt="avatar" />
               </section>
               <section className="main_section" id="skills">
                 <h2 className="main_title skills">Skills</h2>
@@ -63,7 +66,7 @@ function App() {
                   <img src={imagebootstrap} alt="Icon Bootstrap" />
                 </div>
               </section>
-              <section className="main_section" id="experience">
+              {/* <section className="main_section" id="experience">
                 <h2 className="main_title">Experience</h2>
                 <div className="main_contain experience">
                   <div className="textexperience adalab">
@@ -183,7 +186,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
             </div>
           </div>
           <ul className="menu">
