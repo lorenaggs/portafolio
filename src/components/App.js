@@ -1,225 +1,274 @@
-import imagereact from "../images/react.png";
-import imagehtml from "../images/html.png";
-import imagecss from "../images/css.png";
-import imagesass from "../images/sass.png";
-import imagejavascript from "../images/javascript.png";
+import imagereact from "../images/react-original-wordmark.svg";
+import imagehtml from "../images/html5.png";
+import imagecss from "../images/css3.png";
+import imagesass from "../images/sass-original.svg";
+import imagejavascript from "../images/javascript-original.svg";
 import imagenode from "../images/node.png";
 import imagegithub from "../images/github.png";
-import "../styles/App.scss";
-import imagebootstrap from "../images/bootstrap.png";
+import imagebootstrap from "../images/bootstrap.svg";
+// import imageexpress from "../images/express.png";
+import imagefigma from "../images/figma.svg";
+import imagegitbranch from "../images/git-ramas.svg";
+import imagegulp from "../images/gulp.svg";
+import imageheroku from "../images/heroku.svg";
+import imagenpm from "../images/npm.svg";
+import imagepostman from "../images/postman.png";
+import imagescrum from "../images/scrum.png";
+import imageslack from "../images/slack.svg";
+import imagesqlite from "../images/sqlite.jpeg";
+import imagevsc from "../images/visualstudiocodelogo.png";
+import imagezeplin from "../images/zeplin.png";
+
 import avatar from "../images/avatar.png";
-// import imageadalab from "../images/logo-adalab.png";
-// import imageopenspaces from "../images/openspaces.png";
-// import imageaboutus from "../images/aboutus.png";
-// import imagespotify from "../images/spotify.png";
-// import imageowenwilson from "../images/owenwilson.png";
-// import imagephrasefriends from "../images/phrasefriends.png";
-// import imageawesomeprofile from "../images/awesomeprofile.png";
-// import imagecocktails from "../images/cocktails.png";
+import "../styles/App.scss";
+import imageadalab from "../images/logo-adalab.png";
+import imageopenspaces from "../images/openspaces.png";
+import imageaboutus from "../images/aboutus.png";
+import imagespotify from "../images/spotify.png";
+import imageowenwilson from "../images/owenwilson.png";
+import imagephrasefriends from "../images/phrasefriends.png";
+import imageawesomeprofile from "../images/awesomeprofile.png";
+import imagecocktails from "../images/cocktails.png";
 
 function App() {
   return (
-    <div className="container">
-      <div className="container__sinfooter">
-        <header className="header">
+    <div>
+      <header className="header">
+        <div className="header__names">
           <h1 className="name">Lorena</h1>
           <h2 className="lastName">Guartazaca</h2>
-        </header>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+      </header>
+      <main className="main">
+        <section className="banner">
+          <div className="banner__text">
+            I am &nbsp;
+            <span className="banner__text-write"> a creative.</span>
+          </div>
+          <p className="banner__text">frontend Developer</p>
+          <section className="banner__image">
+            <section className="banner__image-imageprofile">
+              <div className="banner__image-imageMe"></div>
+            </section>
+          </section>
+        </section>
+        <section className="aboutme" id="aboutme">
+          <div className="aboutme">
+            <section className="aboutme__label">
+              <h2 className="title">About me</h2>
+              <div className="aboutme__rectanglepink"></div>
+            </section>
+            <p className="aboutme__text main_contain">
+              Hi, my name is Lorena Guartazaca, I am a professional who is
+              reinventing herself in web developer with skills in backend.
+            </p>
+            <div className="aboutme__rectangleblue"></div>
+          </div>
+          <img className="avatar" src={avatar} alt="avatar" />
+        </section>
+        <section className="skills" id="skills">
+          <h2 className="title">Skills and tools</h2>
+          <section className="skills__icons">
+            <img
+              className="skills__icons-image"
+              src={imagereact}
+              alt="Icon React"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagecss}
+              alt="Icon Css"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagesass}
+              alt="Icon Sass"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagejavascript}
+              alt="Icon JavaScript"
+            />
 
-        <div className="containerApp">
-          <div className="App">
-            <main className="main">
-              <section className="main_imageprofile">
-                <div className="imageMe"></div>
-              </section>
-            </main>
-            <div className="main__description">
-              I am &nbsp;
-              <span className="write"> a creative.</span>
+            <img
+              className="skills__icons-image"
+              src={imagenode}
+              alt="Icon Node"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagegithub}
+              alt="Icon Github"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagegitbranch}
+              alt="Git Branch"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagehtml}
+              alt="Icon Html"
+            />
+            <img
+              className="skills__icons-image"
+              src={imagebootstrap}
+              alt="Icon Bootstrap"
+            />
+            <img className="skills__icons-image" src={imagefigma} alt="Figma" />
+            <img
+              className="skills__icons-image"
+              src={imagezeplin}
+              alt="Zeplin"
+            />
+            <img className="skills__icons-image" src={imagegulp} alt="Gulp" />
+            <img
+              className="skills__icons-image"
+              src={imageheroku}
+              alt="Heroku"
+            />
+            <img className="skills__icons-image" src={imagenpm} alt="Npm" />
+            <img
+              className="skills__icons-image"
+              src={imagepostman}
+              alt="Postman"
+            />
+            <img className="skills__icons-image" src={imageslack} alt="Slack" />
+            <img
+              className="skills__icons-image withskills"
+              src={imagescrum}
+              alt="Scrum"
+            />
+            <img
+              className="skills__icons-image withskills"
+              src={imagesqlite}
+              alt="SQLite"
+            />
+            <img className="skills__icons-image" src={imagevsc} alt="VSC" />
+          </section>
+        </section>
+        <section className="experience" id="experience">
+          <h2 className="title">Experience</h2>
+          <div className="experience__contain">
+            <div className="textexperience adalab">
+              <img className="imageadalab" src={imageadalab} alt="Adalab" />
+              <div>
+                <h3 className="textexperience">
+                  Adalab - Desarrollo front-end
+                </h3>
+                <p className="textexperience date">
+                  feb. 2022 - actualidad • 4 meses
+                </p>
+              </div>
             </div>
-            <p className="main__description">frontend Developer</p>
-            <div className="descriptionmenu">
-              <section className="main_section aboutme" id="aboutme">
-                <div>
-                  <section className="main_containertitle">
-                    <h2 className="main_title">About me</h2>
-                    <div className="rectangle pink"></div>
-                  </section>
-                  <p className="main_contain">
-                    Hi, my name is Lorena Guartazaca, I am a professional who is
-                    reinventing herself in web developer with skills in backend.
-                  </p>
-                  <div className="rectangle blue"></div>
-                </div>
-                <img className="avatar" src={avatar} alt="avatar" />
-              </section>
-              <section className="main_section" id="skills">
-                <h2 className="main_title skills">Skills</h2>
-                <div className="main_contain-skills">
-                  <img
-                    className="imageskills"
-                    src={imagereact}
-                    alt="Icon React"
-                  />
-                  <img className="imageskills" src={imagecss} alt="Icon Css" />
-                  <img
-                    className="imageskills"
-                    src={imagesass}
-                    alt="Icon Sass"
-                  />
-                  <img
-                    className="imageskills"
-                    src={imagejavascript}
-                    alt="Icon JavaScript"
-                  />
+            <p className="textexperience">
+              Programa integral de formación que aporta los conocimientos y
+              herramientas para el desarrollo web front-end.
+            </p>
+          </div>
+          <div className="experience__contain">
+            <div className="textexperience adalab"></div>
+          </div>
+        </section>
+        <section className="profile" id="profile">
+          <div className="profile__label">
+            <h2 className="title">Profile</h2>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/lorenaggs?tab=repositories"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </div>
 
-                  <img
-                    className="imageskills"
-                    src={imagenode}
-                    alt="Icon Node"
-                  />
-                  <img
-                    className="imageskills"
-                    src={imagegithub}
-                    alt="Icon Github"
-                  />
-                  <img
-                    className="imageskills"
-                    src={imagehtml}
-                    alt="Icon Html"
-                  />
-                  <img
-                    className="imageskills"
-                    src={imagebootstrap}
-                    alt="Icon Bootstrap"
-                  />
-                </div>
-              </section>
-              {/* <section className="main_section" id="experience">
-                <h2 className="main_title">Experience</h2>
-                <div className="main_contain experience">
-                  <div className="textexperience adalab">
-                    <img
-                      className="imageadalab"
-                      src={imageadalab}
-                      alt="Adalab"
-                    />
-                    <div>
-                      <h3 className="textexperience">
-                        Adalab - Desarrollo front-end
-                      </h3>
-                      <p className="textexperience date">
-                        feb. 2022 - actualidad • 4 meses
-                      </p>
-                    </div>
-                  </div>
-                  <p className="textexperience">
-                    Programa integral de formación que aporta los conocimientos
-                    y herramientas para el desarrollo web front-end.
-                  </p>
-                </div>
-                <div className="main_contain experience">
-                  <div className="textexperience adalab"></div>
-                </div>
-              </section>
-              <section className="main_section" id="profile">
-                <h2 className="main_title">Profile</h2>
-                <div className="main_contain profile">
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-open-space-html-scss/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imageopenspaces}
-                      alt="Open Spaces"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-project-about-us-HTML-SCSS/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imageaboutus}
-                      alt="About-us"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-spotify-HTML-CSS/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imagespotify}
-                      alt="Spotify"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-movies-owen-wilson-REACT/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imageowenwilson}
-                      alt="Owen Wilson"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-frases-de-friends-JS/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imagephrasefriends}
-                      alt="Phrase friends"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/create.html"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imageawesomeprofile}
-                      alt="Awesome Profile"
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://lorenaggs.github.io/adalab-cocteles-JS/"
-                  >
-                    <img
-                      className="imageprofile"
-                      src={imagecocktails}
-                      alt="Coktails"
-                    />
-                  </a>
-                </div>
-              </section>
-              <section className="main_section" id="contactme">
-                <h2 className="main_title">Contact me</h2>
-                <div className="main_contain">
-                  <div className="contactmenow">
-                    <section className="main_imageprofilecontac contactme"></section>
-                    <div className="contactme__text">
-                      Contact
-                      <span className="contactme__textcolor">me now</span>
-                    </div>
-                  </div>
-                </div>
-              </section> */}
+          <div className="profile__container">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-open-space-html-scss/"
+            >
+              <img
+                className="imageprofile"
+                src={imageopenspaces}
+                alt="Open Spaces"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-project-about-us-HTML-SCSS/"
+            >
+              <img className="imageprofile" src={imageaboutus} alt="About-us" />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-spotify-HTML-CSS/"
+            >
+              <img className="imageprofile" src={imagespotify} alt="Spotify" />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-movies-owen-wilson-REACT/"
+            >
+              <img
+                className="imageprofile"
+                src={imageowenwilson}
+                alt="Owen Wilson"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-frases-de-friends-JS/"
+            >
+              <img
+                className="imageprofile"
+                src={imagephrasefriends}
+                alt="Phrase friends"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/create.html"
+            >
+              <img
+                className="imageprofile"
+                src={imageawesomeprofile}
+                alt="Awesome Profile"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://lorenaggs.github.io/adalab-cocteles-JS/"
+            >
+              <img
+                className="imageprofile"
+                src={imagecocktails}
+                alt="Coktails"
+              />
+            </a>
+          </div>
+        </section>
+        <section className="contactme" id="contactme">
+          <h2 className="title">Contact me</h2>
+          <div className="contactme__container">
+            <div className="contactmenow">
+              <section className="main_imageprofilecontac contactme__circle"></section>
+              <div className="contactme__text">
+                Contact
+                <span className="contactme__textcolor"> me now</span>
+              </div>
             </div>
           </div>
-          <ul className="menu">
-            {/* <a className="menu__sections" href="./App.js#contactme">
+        </section>
+        <ul className="menu">
+          {/* <a className="menu__sections" href="./App.js#contactme">
               contact
             </a>
             <a className="menu__sections" href="./App.js#profile">
@@ -228,17 +277,16 @@ function App() {
             <a className="menu__sections" href="./App.js#experience">
               experience
             </a> */}
-            <a className="menu__sections" href="#skills">
-              skills
+          {/* <a className="menu__sections" href="#skills">
+              skills-tools
             </a>
             <a className="menu__sections" href="#aboutme">
               about_me
-            </a>
-          </ul>
-        </div>
-      </div>
+            </a> */}
+        </ul>
+      </main>
 
-      <section className="icons">
+      <footer className="icons">
         <a
           rel="noreferrer"
           target="_blank"
@@ -249,11 +297,11 @@ function App() {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://github.com/lorenaggs?tab=repositories"
+          href="https://api.whatsapp.com/send?phone=593994607544"
         >
-          <i className="fa-brands fa-github"></i>
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
-      </section>
+      </footer>
     </div>
   );
 }
