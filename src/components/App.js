@@ -1,3 +1,4 @@
+import { useState } from "react";
 import imagereact from "../images/react-original-wordmark.svg";
 import imagehtml from "../images/html5.png";
 import imagecss from "../images/css3.png";
@@ -30,6 +31,18 @@ import imageawesomeprofile from "../images/awesomeprofile.png";
 import imagecocktails from "../images/cocktails.png";
 
 function App() {
+  const [showMenu, setCloseMenu] = useState(false);
+  // const [goSection, setGoSection] = useState();
+
+  const handleCloseMenu = () => {
+    setCloseMenu(!showMenu);
+  };
+
+  const handleGoSection = () => {
+    handleCloseMenu();
+    // setGoSection(goSection);
+  };
+
   return (
     <div>
       <header className="header">
@@ -37,36 +50,63 @@ function App() {
           <h1 className="name">Lorena</h1>
           <h2 className="lastName">Guartazaca</h2>
         </div>
-        <i class="fa-solid fa-bars iconmenu"></i>
-        {/* <div className="menu__mobile">
-          <i class="fa-solid fa-x iconx"></i>
+        <button className="btnshow" onClick={handleCloseMenu}>
+          <i className="fa-solid fa-bars iconmenu"></i>
+        </button>
+
+        <div className={showMenu ? "menu__mobile" : "hidden"}>
+          <button className="btnclose" title="close" onClick={handleCloseMenu}>
+            <i className="fa-solid fa-x iconx"></i>
+          </button>
           <div className="menu__container">
-            <a className="menu_mobilelist" href="#aboutme">
+            <a
+              className="menu_mobilelist"
+              href="#aboutme"
+              onClick={handleGoSection}
+            >
               About_me
             </a>
-            <a className="menu_mobilelist" href="#skills">
+            <a
+              className="menu_mobilelist"
+              href="#skills"
+              onClick={handleGoSection}
+            >
               Skills
             </a>
-            <a className="menu_mobilelist" href="#experience">
+            <a
+              className="menu_mobilelist"
+              href="#experience"
+              onClick={handleGoSection}
+            >
               Experience
             </a>
-            <a className="menu_mobilelist" href="#profile">
+            <a
+              className="menu_mobilelist"
+              href="#profile"
+              onClick={handleGoSection}
+            >
               Portafolio
             </a>
-            <a className="menu_mobilelist" href="#contactme">
+            <a
+              className="menu_mobilelist"
+              href="#contactme"
+              onClick={handleGoSection}
+            >
               Contact_me
             </a>
           </div>
-        </div> */}
+        </div>
       </header>
       <main className="main">
         <div className="main__sections">
           <section className="banner">
-            <div className="banner__text">
-              I am &nbsp;
-              <span className="banner__text-write"> a creative.</span>
+            <div className="banner__iam">
+              <div className="banner__text">
+                I am &nbsp;
+                <span className="banner__text-write"> a creative.</span>
+              </div>
+              <p className="banner__text">frontend Developer</p>
             </div>
-            <p className="banner__text">frontend Developer</p>
             <section className="banner__image">
               <section className="banner__image-imageprofile">
                 <div className="banner__image-imageMe"></div>
@@ -79,7 +119,7 @@ function App() {
                 <h2 className="title">About me</h2>
                 <div className="aboutme__rectanglepink"></div>
               </section>
-              <p className="aboutme__text main_contain">
+              <p className="aboutme__text">
                 Hi, my name is Lorena Guartazaca, I am a professional who is
                 reinventing herself in web developer with skills in backend.
               </p>
@@ -94,86 +134,117 @@ function App() {
                 className="skills__icons-image"
                 src={imagereact}
                 alt="Icon React"
+                title="React"
               />
               <img
                 className="skills__icons-image"
                 src={imagecss}
                 alt="Icon Css"
+                title="Css"
               />
               <img
                 className="skills__icons-image"
                 src={imagesass}
                 alt="Icon Sass"
+                title="Sass"
               />
               <img
                 className="skills__icons-image"
                 src={imagejavascript}
                 alt="Icon JavaScript"
+                title="JavaScript"
               />
 
               <img
                 className="skills__icons-image"
                 src={imagenode}
                 alt="Icon Node"
+                title="Node"
               />
               <img
                 className="skills__icons-image"
                 src={imagegithub}
                 alt="Icon Github"
+                title="Github"
               />
               <img
                 className="skills__icons-image"
                 src={imagegitbranch}
-                alt="Git Branch"
+                alt="Git"
+                title="Git"
               />
               <img
                 className="skills__icons-image"
                 src={imagehtml}
                 alt="Icon Html"
+                title="Html"
               />
               <img
                 className="skills__icons-image"
                 src={imagebootstrap}
                 alt="Icon Bootstrap"
+                title="Bootstrap"
               />
               <img
                 className="skills__icons-image"
                 src={imagefigma}
                 alt="Figma"
+                title="Figma"
               />
               <img
                 className="skills__icons-image"
                 src={imagezeplin}
                 alt="Zeplin"
+                title="Zeplin"
               />
-              <img className="skills__icons-image" src={imagegulp} alt="Gulp" />
+              <img
+                className="skills__icons-image"
+                src={imagegulp}
+                alt="Gulp"
+                title="Gulp"
+              />
               <img
                 className="skills__icons-image"
                 src={imageheroku}
                 alt="Heroku"
+                title="Heroku"
               />
-              <img className="skills__icons-image" src={imagenpm} alt="Npm" />
+              <img
+                className="skills__icons-image"
+                src={imagenpm}
+                alt="Npm"
+                title="npm"
+              />
               <img
                 className="skills__icons-image"
                 src={imagepostman}
                 alt="Postman"
+                title="Postman"
               />
               <img
                 className="skills__icons-image"
                 src={imageslack}
                 alt="Slack"
+                title="Slack"
               />
               <img
                 className="skills__icons-image withskills"
                 src={imagescrum}
                 alt="Scrum"
+                title="Scrum"
               />
               <img
                 className="skills__icons-image withskills"
                 src={imagesqlite}
                 alt="SQLite"
+                title="SQLite"
               />
-              <img className="skills__icons-image" src={imagevsc} alt="VSC" />
+              <img
+                className="skills__icons-image"
+                src={imagevsc}
+                alt="VSC"
+                title="VSC"
+              />
             </section>
           </section>
           <section className="experience" id="experience">
@@ -336,13 +407,13 @@ function App() {
             target="_blank"
             href="https://api.whatsapp.com/send?phone=593994607544"
           >
-            <i class="fa-brands fa-whatsapp"></i>
+            <i className="fa-brands fa-whatsapp"></i>
           </a>
         </div>
         <div>
           <a className="backtotop" rel="noreferrer" href="#">
             <p className="textback">Back</p>
-            <i class="fa-solid fa-chevron-up backicon"></i>
+            <i className="fa-solid fa-chevron-up backicon"></i>
           </a>
         </div>
       </footer>
