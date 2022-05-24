@@ -38,7 +38,7 @@ function App() {
           <h2 className="lastName">Guartazaca</h2>
         </div>
         <i class="fa-solid fa-bars iconmenu"></i>
-        <div className="menu__mobile">
+        {/* <div className="menu__mobile">
           <i class="fa-solid fa-x iconx"></i>
           <div className="menu__container">
             <a className="menu_mobilelist" href="#aboutme">
@@ -57,7 +57,7 @@ function App() {
               Contact_me
             </a>
           </div>
-        </div>
+        </div> */}
       </header>
       <main className="main">
         <div className="main__sections">
@@ -74,7 +74,7 @@ function App() {
             </section>
           </section>
           <section className="aboutme" id="aboutme">
-            <div className="aboutme">
+            <div className="aboutme__container">
               <section className="aboutme__label">
                 <h2 className="title">About me</h2>
                 <div className="aboutme__rectanglepink"></div>
@@ -341,7 +341,7 @@ function App() {
         </div>
         <div>
           <a className="backtotop" rel="noreferrer" href="#">
-            <p className="textback">Back to top</p>
+            <p className="textback">Back</p>
             <i class="fa-solid fa-chevron-up backicon"></i>
           </a>
         </div>

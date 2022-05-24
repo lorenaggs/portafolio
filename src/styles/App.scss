@@ -295,15 +295,10 @@ body {
 }
 
 .backtotop, .backicon{
-//   font-size: 30px;
   color: $color-brown;
   display: flex;
   text-align: center;
   margin-right: 10px;
-//   position: fixed;
-//   right: 0;
-//   bottom: 0;
-//   padding: 10px;
 }
 
 .textback{
@@ -315,16 +310,18 @@ body {
   .iconmenu {
     display: none;
   }
-  //   .aboutme {
-  //     display: flex;
-  //     justify-content: space-between;
-  //   }
-  //   .avatar {
-  //     display: flex;
-  //     width: 250px;
-  //     height: 250px;
-  //     margin-top: -50px;
-  //   }
+    .aboutme {
+      display: flex;
+      justify-content: space-between;
+    }
+    .avatar {
+      display: flex;
+      width: 250px;
+      height: 250px;
+      right: 0;
+      // position:sticky;
+      // margin-top: -50px;
+    }
 
   //   .imageskills {
   //     width: 80px;
