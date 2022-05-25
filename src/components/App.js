@@ -23,7 +23,7 @@ import imageback from "../images/backend.png";
 import imagemigration from "../images/migrationjsreact.png";
 
 import avatar from "../images/avatar.png";
-import "../styles/app.scss";
+import "../styles/App.scss";
 import imageadalab from "../images/logo-adalab.png";
 import imageopenspaces from "../images/openspaces.png";
 import imageaboutus from "../images/aboutus.png";
