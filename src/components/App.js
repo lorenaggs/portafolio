@@ -443,12 +443,12 @@ function App() {
             <i className="fa-brands fa-whatsapp"></i>
           </a>
         </div>
-        {/* <button className="btnback">
+        <button className="btnback">
           <a className="backtotop" rel="noreferrer" href="/#">
             <p className="textback">Back</p>
             <i className="fa-solid fa-chevron-up backicon"></i>
           </a>
-        </button> */}
+        </button>
       </footer>
     </div>
   );
