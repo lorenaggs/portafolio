@@ -395,6 +395,17 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* <form action="">
+              <label htmlFor="">Nombre</label>
+              <input type="text" />
+              <label htmlFor="">Apellido</label>
+              <input type="text" />
+              <label htmlFor="">Email</label>
+              <input type="email" />
+              <label htmlFor="">Escribe un mensaje</label>
+              <input type="text" />
+              <button>Enviar</button>
+            </form> */}
           </section>
         </div>
         <div className="menu__tablet">
@@ -432,12 +443,12 @@ function App() {
             <i className="fa-brands fa-whatsapp"></i>
           </a>
         </div>
-        <div>
-          <a className="backtotop" rel="noreferrer" href="#">
+        <button className="btnback">
+          <a className="backtotop" rel="noreferrer" href="/#">
             <p className="textback">Back</p>
             <i className="fa-solid fa-chevron-up backicon"></i>
           </a>
-        </div>
+        </button>
       </footer>
     </div>
   );
