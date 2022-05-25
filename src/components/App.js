@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "animate.css";
 import imagereact from "../images/react-original-wordmark.svg";
 import imagehtml from "../images/html5.png";
 import imagecss from "../images/css3.png";
@@ -18,6 +19,8 @@ import imageslack from "../images/slack.svg";
 import imagesqlite from "../images/sqlite.jpeg";
 import imagevsc from "../images/visualstudiocodelogo.png";
 import imagezeplin from "../images/zeplin.png";
+import imageback from "../images/backend.png";
+import imagemigration from "../images/migrationjsreact.png";
 
 import avatar from "../images/avatar.png";
 import "../styles/App.scss";
@@ -272,7 +275,7 @@ function App() {
           </section>
           <section className="profile" id="profile">
             <div className="profile__label">
-              <h2 className="title">Profile</h2>
+              <h2 className="title">Portafolio</h2>
               <a
                 rel="noreferrer"
                 target="_blank"
@@ -341,17 +344,6 @@ function App() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/create.html"
-              >
-                <img
-                  className="imageprofile"
-                  src={imageawesomeprofile}
-                  alt="Awesome Profile"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
                 href="https://lorenaggs.github.io/adalab-cocteles-JS/"
               >
                 <img
@@ -359,6 +351,36 @@ function App() {
                   src={imagecocktails}
                   alt="Coktails"
                 />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/"
+              >
+                <img
+                  className="imageprofile"
+                  src={imageawesomeprofile}
+                  alt="Awesome Profile"
+                />
+              </a>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://lorenaggs.github.io/adalab-tarjetas-migracion-REACT/"
+              >
+                <img
+                  className="imageprofile"
+                  src={imagemigration}
+                  alt="Migration JS-REACT"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://module-4-team-8.herokuapp.com/"
+              >
+                <img className="imageprofile" src={imageback} alt="Backend" />
               </a>
             </div>
           </section>
