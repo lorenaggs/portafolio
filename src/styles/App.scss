@@ -27,6 +27,10 @@ body {
   padding: 15px;
 }
 
+.lastName {
+  margin-top: 13px;
+}
+
 .header__names {
   display: flex;
   align-items: center;
@@ -100,7 +104,7 @@ body {
   right: 0;
   height: 100%;
   position: absolute;
-  animation: maquinaescribir 2s infinite alternate steps(11);
+  animation: maquinaescribir 2s infinite alternate steps(15);
 }
 
 @keyframes maquinaescribir {
@@ -134,8 +138,9 @@ body {
   height: 220px;
   margin-top: -20px;
 }
+
 .main {
-  margin: 10px;
+  margin: 3rem;
   display: flex;
 }
 
@@ -167,6 +172,7 @@ body {
 
 .aboutme__text {
   font-size: 1.4rem;
+  text-align: justify;
 }
 .avatar {
   display: none;
@@ -208,6 +214,14 @@ body {
 .textexperience {
   color: $color-black;
   text-align: justify;
+  margin: 10px 0px;
+}
+
+.textexperience-list {
+  margin: 10px;
+  // padding: 10px;
+  color: $color-black;
+  list-style-type: disc;
 }
 
 .date {
@@ -219,11 +233,12 @@ body {
 }
 
 .imageprofile {
-  // width: 250px;
+  width: 150px;
   height: 250px;
   margin: 10px;
   cursor: pointer;
   border-radius: 20px;
+  // position: relative;
 }
 
 .profile__label {
@@ -232,9 +247,34 @@ body {
   justify-content: space-between;
 }
 
-  .profile__container {
-    text-align: center;
-  }
+.profile__container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container__project {
+  // height: 250px;
+  // width: 140px;
+  // margin: 10px;
+  cursor: pointer;
+}
+
+.container__project:hover .descriptionproj {
+  display: flex;
+}
+
+.descriptionproj {
+  display: none;
+  border-radius: 20px;
+  position: absolute;
+  margin: 10px;
+  height: 250px;
+  width: 150px;
+  align-items: center;
+  background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+}
 
 .contactme {
   margin-bottom: 60px;
@@ -257,9 +297,12 @@ body {
 .contactme__text {
   margin-left: -25px;
 }
+
 .contactme__textcolor {
   color: $color-brown;
+  margin-left: -30px;
 }
+
 .menu__tablet {
   display: none;
 }
@@ -297,8 +340,59 @@ body {
   color: $color-brown;
 }
 
-.btnback{
+.btnback {
   background: none;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelform {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  align-content: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.labelform:focus-within label {
+  transform: translate(0, -30px) scale(0.8);
+  color: #ca3ea6;
+}
+
+.label {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(10px);
+  transition: transform 0.25s;
+}
+
+.inputext {
+  color: $color-black;
+  padding: 10px;
+  margin: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, $color-pink 0%, $color-blue) 1;
+  font: inherit;
+  color: #fff;
+  background: transparent;
+  outline: 2px solid #fff;
+}
+
+.btnsent {
+  background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media all and (min-width: $tablet-width) {
@@ -365,6 +459,7 @@ body {
 
   .main {
     margin-right: 100px;
+    margin: 0rem 10rem;
   }
 
   .menu__tablet {
@@ -394,15 +489,18 @@ body {
     display: none;
   }
 
-  .imageprofile {
+  .imageprofile .descriptionproj {
     height: 350px;
+    width: 230px;
     padding: 15px;
   }
 }
 
-
 @media all and (min-width: $desktop-width) {
    .main__sections{
     padding: 0rem 10rem;
+  }
+  .form {
+    margin: 0rem 10rem;
   }
 }

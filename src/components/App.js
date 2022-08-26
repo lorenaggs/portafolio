@@ -1,5 +1,5 @@
+import "../styles/App.scss";
 import { useState } from "react";
-import "animate.css";
 import imagereact from "../images/react-original-wordmark.svg";
 import imagehtml from "../images/html5.png";
 import imagecss from "../images/css3.png";
@@ -21,10 +21,14 @@ import imagevsc from "../images/visualstudiocodelogo.png";
 import imagezeplin from "../images/zeplin.png";
 import imageback from "../images/backend.png";
 import imagemigration from "../images/migrationjsreact.png";
+import apify from "../images/apify.png";
+import cheerio from "../images/cheerio.png";
 
 import avatar from "../images/avatar.png";
 import "../styles/App.scss";
+
 import imageadalab from "../images/logo-adalab.png";
+import imageeos from "../images/eosecuador.jpeg";
 import imageopenspaces from "../images/openspaces.png";
 import imageaboutus from "../images/aboutus.png";
 import imagespotify from "../images/spotify.png";
@@ -32,10 +36,11 @@ import imageowenwilson from "../images/owenwilson.png";
 import imagephrasefriends from "../images/phrasefriends.png";
 import imageawesomeprofile from "../images/awesomeprofile.png";
 import imagecocktails from "../images/cocktails.png";
+import imagePokemons from "../images/pokemons.png";
+import imagealnusoft from "../images/alnusoft.jpeg";
 
 function App() {
   const [showMenu, setCloseMenu] = useState(false);
-  // const [goSection, setGoSection] = useState();
 
   const handleCloseMenu = () => {
     setCloseMenu(!showMenu);
@@ -43,7 +48,6 @@ function App() {
 
   const handleGoSection = () => {
     handleCloseMenu();
-    // setGoSection(goSection);
   };
 
   return (
@@ -61,7 +65,7 @@ function App() {
           <button className="btnclose" title="close" onClick={handleCloseMenu}>
             <i className="fa-solid fa-x iconx"></i>
           </button>
-          <div className="menu__container">
+          <nav className="menu__container">
             <a
               className="menu_mobilelist"
               href="#aboutme"
@@ -97,7 +101,7 @@ function App() {
             >
               Contact_me
             </a>
-          </div>
+          </nav>
         </div>
       </header>
       <main className="main">
@@ -105,10 +109,10 @@ function App() {
           <section className="banner">
             <div className="banner__iam">
               <div className="banner__text">
-                I am &nbsp;
-                <span className="banner__text-write"> a creative.</span>
+                Soy&nbsp;
+                <span className="banner__text-write">una creativa.</span>
               </div>
-              <p className="banner__text">frontend Developer</p>
+              <p className="banner__text">desarrollara Frontend</p>
             </div>
             <section className="banner__image">
               <section className="banner__image-imageprofile">
@@ -123,8 +127,10 @@ function App() {
                 <div className="aboutme__rectanglepink"></div>
               </section>
               <p className="aboutme__text">
-                Hi, my name is Lorena Guartazaca, I am a professional who is
-                reinventing herself in web developer with skills in backend.
+                Hola, soy Lorena Guartazaca, una profesional que se esta
+                reinventando como desarrolladora web con habilidad tanto en
+                frontend como backend con muchas ganas de seguir aprendiendo y
+                formandose.
               </p>
               <div className="aboutme__rectangleblue"></div>
             </div>
@@ -248,10 +254,60 @@ function App() {
                 alt="VSC"
                 title="VSC"
               />
+              <img
+                className="skills__icons-image"
+                src={apify}
+                alt="Apify"
+                title="Apify"
+              />
+              <img
+                className="skills__icons-image"
+                src={cheerio}
+                alt="Cheerio"
+                title="Cheerio"
+              />
             </section>
           </section>
           <section className="experience" id="experience">
             <h2 className="title">Experience</h2>
+            <div className="experience__contain">
+              <div className="textexperience adalab">
+                <img
+                  className="imageadalab"
+                  src={imagealnusoft}
+                  alt="Alnusoft"
+                />
+                <div>
+                  <h3 className="textexperience">
+                    Alnusoft - Desarrollo front-end
+                  </h3>
+                  <p className="textexperience date">jul. 2022 - actualidad</p>
+                </div>
+              </div>
+              <p className="textexperience">
+                Eztracción de datos web de todo tipo de sitios web y
+                aplicaciones móviles.
+              </p>
+              <ul className="textexperience-list">
+                <li className="textexperience-list">Apify</li>
+                <li className="textexperience-list">Cheerio</li>
+                <li className="textexperience-list">
+                  Interfaz de programación DOM
+                </li>
+                <li className="textexperience-list">
+                  Conocimientos de vanilla Javascript.
+                </li>
+                <li className="textexperience-list">Typescript</li>
+                <li className="textexperience-list">
+                  Control de versiones con Git.
+                </li>
+                <li className="textexperience-list">
+                  Herramientas de comunicación y trabajo en equipo: Telegram,
+                  Trello, GitHub.
+                </li>
+              </ul>
+            </div>
+
             <div className="experience__contain">
               <div className="textexperience adalab">
                 <img className="imageadalab" src={imageadalab} alt="Adalab" />
@@ -260,7 +316,7 @@ function App() {
                     Adalab - Desarrollo front-end
                   </h3>
                   <p className="textexperience date">
-                    feb. 2022 - actualidad • 4 meses
+                    feb. 2022 - may. 2022 • 4 meses
                   </p>
                 </div>
               </div>
@@ -268,9 +324,55 @@ function App() {
                 Programa integral de formación que aporta los conocimientos y
                 herramientas para el desarrollo web front-end.
               </p>
+              <ul className="textexperience-list">
+                <li className="textexperience-list">
+                  Maquetación: HTML5, CSS3, Flexbox, CSS Grid, diseño
+                  responsive, SASS, animaciones y maquetación por componentes.
+                </li>
+                <li className="textexperience-list">
+                  Frameworks de desarrollo web: Bootstrap.
+                </li>
+                <li className="textexperience-list">
+                  Conocimientos de vanilla Javascript.
+                </li>
+                <li className="textexperience-list">
+                  ES6 y creación de SPAs sencillas con React
+                </li>
+                <li className="textexperience-list">
+                  Control de versiones con Git.
+                </li>
+                <li className="textexperience-list">
+                  Experiencia en el desarrollo de proyectos usando metodologías
+                  ágiles - SCRUM.
+                </li>
+                <li className="textexperience-list">
+                  Herramientas de desarrollo: Atom, Gulp, Terminal.
+                </li>
+                <li className="textexperience-list">
+                  Herramientas de comunicación y trabajo en equipo: Slack,
+                  Trello, GitHub.
+                </li>
+              </ul>
             </div>
             <div className="experience__contain">
-              <div className="textexperience adalab"></div>
+              <div className="textexperience adalab">
+                <img className="imageadalab" src={imageeos} alt="Adalab" />
+                <div>
+                  <h3 className="textexperience">
+                    EcuadorQuest - Jefe de Operaciones
+                  </h3>
+                  <p className="textexperience date">ene. 2016 - actualidad</p>
+                </div>
+              </div>
+              <ul className="textexperience-list">
+                <li className="textexperience-list">
+                  Manejo de sistemas electrónicos (facturación electrónica).
+                </li>
+                <li className="textexperience-list">
+                  Registros contables de ingresos, egresos, retenciones,
+                  asientos contables de ajustes usando sistemas informáticos
+                </li>
+              </ul>
             </div>
           </section>
           <section className="profile" id="profile">
@@ -286,129 +388,211 @@ function App() {
             </div>
 
             <div className="profile__container">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-open-space-html-scss/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imageopenspaces}
-                  alt="Open Spaces"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-project-about-us-HTML-SCSS/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imageaboutus}
-                  alt="About-us"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-spotify-HTML-CSS/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imagespotify}
-                  alt="Spotify"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-movies-owen-wilson-REACT/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imageowenwilson}
-                  alt="Owen Wilson"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-frases-de-friends-JS/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imagephrasefriends}
-                  alt="Phrase friends"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-cocteles-JS/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imagecocktails}
-                  alt="Coktails"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imageawesomeprofile}
-                  alt="Awesome Profile"
-                />
-              </a>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://pokemons-beta.vercel.app/"
+                >
+                  <p className="descriptionproj">
+                    Buscador de Pokemons conectada a una API.
+                  </p>
 
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://lorenaggs.github.io/adalab-tarjetas-migracion-REACT/"
-              >
-                <img
-                  className="imageprofile"
-                  src={imagemigration}
-                  alt="Migration JS-REACT"
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://module-4-team-8.herokuapp.com/"
-              >
-                <img className="imageprofile" src={imageback} alt="Backend" />
-              </a>
+                  <img
+                    className="imageprofile"
+                    src={imagePokemons}
+                    alt="Pokemons"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-open-space-html-scss/"
+                >
+                  <p className="descriptionproj">
+                    Maquetación de pagina de compras en linea HTLM y SASS.
+                    Proyecto personal
+                  </p>
+
+                  <img
+                    className="imageprofile"
+                    src={imageopenspaces}
+                    alt="Open Spaces"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-project-about-us-HTML-SCSS/"
+                >
+                  <p className="descriptionproj">
+                    Maquetación de pagina acerca de nosotras usando HTML y SASS.
+                    Proyecto de equipo
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imageaboutus}
+                    alt="About-us"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-spotify-HTML-CSS/"
+                >
+                  <p className="descriptionproj">
+                    Maquetación de Spotify usando HTML y CSS. Proyecto de equipo
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imagespotify}
+                    alt="Spotify"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-movies-owen-wilson-REACT/"
+                >
+                  <p className="descriptionproj">
+                    Buscador de películas de Owen Wilson creado con React.
+                    Proyecto personal
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imageowenwilson}
+                    alt="Owen Wilson"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-frases-de-friends-JS/"
+                >
+                  <p className="descriptionproj">
+                    Buscador de frases de amigos y añadir nueva frase realizado
+                    con JavaScript. Proyecto personal
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imagephrasefriends}
+                    alt="Phrase friends"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-cocteles-JS/"
+                >
+                  <p className="descriptionproj">
+                    Buscador de cocteles por nombre y agregar a favoritos
+                    realizado en JavaScript. Proyecto personal
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imagecocktails}
+                    alt="Coktails"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-tarjetas-presentacion-JS/"
+                >
+                  <p className="descriptionproj">
+                    Creación de tarjetas de presentación personalizadas con
+                    HTML, SASS y JavaScript. Proyecto de Equipo
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imageawesomeprofile}
+                    alt="Awesome Profile"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://lorenaggs.github.io/adalab-tarjetas-migracion-REACT/"
+                >
+                  <p className="descriptionproj">
+                    Refactorizacion y migración a React JS. Proyecto de equipo
+                  </p>
+                  <img
+                    className="imageprofile"
+                    src={imagemigration}
+                    alt="Migration JS-REACT"
+                  />
+                </a>
+              </li>
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://module-4-team-8.herokuapp.com/"
+                >
+                  <p className="descriptionproj">
+                    Creación de servidor para tarjetas de presentación con SQL.
+                    Proyecto de equipo
+                  </p>
+                  <img className="imageprofile" src={imageback} alt="Backend" />
+                </a>
+              </li>
             </div>
           </section>
           <section className="contactme" id="contactme">
-            <h2 className="title">Contact me</h2>
+            {/* <h2 className="title">Contact me</h2> */}
             <div className="contactme__container">
               <div className="contactmenow">
                 <section className="main_imageprofilecontac contactme__circle"></section>
-                <div className="contactme__text">
-                  Contact
-                  <span className="contactme__textcolor"> me now</span>
-                </div>
+                <h2 className="contactme__textcolor">
+                  Contact me
+                  {/* <span className="contactme__textcolor"> me now</span> */}
+                </h2>
               </div>
             </div>
-            {/* <form action="">
-              <label htmlFor="">Nombre</label>
-              <input type="text" />
-              <label htmlFor="">Apellido</label>
-              <input type="text" />
-              <label htmlFor="">Email</label>
-              <input type="email" />
-              <label htmlFor="">Escribe un mensaje</label>
-              <input type="text" />
-              <button>Enviar</button>
-            </form> */}
+
+            <form action="" className="form">
+              <div className="labelform">
+                <label
+                  htmlFor=""
+                  placeholder="ej. Maria Sanchez"
+                  className="label"
+                >
+                  Nombre completo
+                </label>
+                <input type="text" className="inputext" />
+              </div>
+              <div className="labelform">
+                <label htmlFor="" placeholder="ej. mariasanchez@hotmail.com">
+                  Email
+                </label>
+                <input type="email" className="inputext" />
+              </div>
+              <div className="labelform">
+                <label htmlFor="">Escribe un mensaje</label>
+                <textarea type="text" className="inputext" rows="10" />
+              </div>
+              <button className="btnsent">Enviar</button>
+            </form>
           </section>
         </div>
-        <div className="menu__tablet">
+        <nav className="menu__tablet">
           <a className="menu__sections" href="#contactme">
             contact
           </a>
@@ -424,7 +608,7 @@ function App() {
           <a className="menu__sections" href="#aboutme">
             about_me
           </a>
-        </div>
+        </nav>
       </main>
       <footer className="icons">
         <div>
