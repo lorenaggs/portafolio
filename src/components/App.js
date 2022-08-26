@@ -44,6 +44,7 @@ function App() {
     setCloseMenu(!showMenu);
   };
 
+  
   const handleGoSection = () => {
     handleCloseMenu();
   };
