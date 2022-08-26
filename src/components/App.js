@@ -25,6 +25,8 @@ import apify from "../images/apify.png";
 import cheerio from "../images/cheerio.png";
 
 import avatar from "../images/avatar.png";
+import "../styles/App.scss";
+
 import imageadalab from "../images/logo-adalab.png";
 import imageeos from "../images/eosecuador.jpeg";
 import imageopenspaces from "../images/openspaces.png";
