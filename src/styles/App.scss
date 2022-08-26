@@ -23,6 +23,10 @@ body {
   padding: 15px;
 }
 
+.lastName {
+  margin-top: 13px;
+}
+
 .header__names {
   display: flex;
   align-items: center;
@@ -348,6 +352,20 @@ body {
   margin: 10px 0px;
   align-content: center;
   font-size: 1.2rem;
+  position: relative;
+}
+
+.labelform:focus-within label {
+  transform: translate(0, -30px) scale(0.8);
+  color: #ca3ea6;
+}
+
+.label {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(10px);
+  transition: transform 0.25s;
 }
 
 .inputext {
@@ -358,6 +376,10 @@ body {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-image: linear-gradient(to right, $color-pink 0%, $color-blue) 1;
+  font: inherit;
+  color: #fff;
+  background: transparent;
+  outline: 2px solid #fff;
 }
 
 .btnsent {

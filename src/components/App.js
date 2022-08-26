@@ -21,6 +21,8 @@ import imagevsc from "../images/visualstudiocodelogo.png";
 import imagezeplin from "../images/zeplin.png";
 import imageback from "../images/backend.png";
 import imagemigration from "../images/migrationjsreact.png";
+import apify from "../images/apify.png";
+import cheerio from "../images/cheerio.png";
 
 import avatar from "../images/avatar.png";
 import imageadalab from "../images/logo-adalab.png";
@@ -32,6 +34,8 @@ import imageowenwilson from "../images/owenwilson.png";
 import imagephrasefriends from "../images/phrasefriends.png";
 import imageawesomeprofile from "../images/awesomeprofile.png";
 import imagecocktails from "../images/cocktails.png";
+import imagePokemons from "../images/pokemons.png";
+import imagealnusoft from "../images/alnusoft.jpeg";
 
 function App() {
   const [showMenu, setCloseMenu] = useState(false);
@@ -121,7 +125,7 @@ function App() {
                 <div className="aboutme__rectanglepink"></div>
               </section>
               <p className="aboutme__text">
-                Hola, soy Lorena Guartazaca soy una profesional que se esta
+                Hola, soy Lorena Guartazaca, una profesional que se esta
                 reinventando como desarrolladora web con habilidad tanto en
                 frontend como backend con muchas ganas de seguir aprendiendo y
                 formandose.
@@ -248,10 +252,60 @@ function App() {
                 alt="VSC"
                 title="VSC"
               />
+              <img
+                className="skills__icons-image"
+                src={apify}
+                alt="Apify"
+                title="Apify"
+              />
+              <img
+                className="skills__icons-image"
+                src={cheerio}
+                alt="Cheerio"
+                title="Cheerio"
+              />
             </section>
           </section>
           <section className="experience" id="experience">
             <h2 className="title">Experience</h2>
+            <div className="experience__contain">
+              <div className="textexperience adalab">
+                <img
+                  className="imageadalab"
+                  src={imagealnusoft}
+                  alt="Alnusoft"
+                />
+                <div>
+                  <h3 className="textexperience">
+                    Alnusoft - Desarrollo front-end
+                  </h3>
+                  <p className="textexperience date">jul. 2022 - actualidad</p>
+                </div>
+              </div>
+              <p className="textexperience">
+                Eztracción de datos web de todo tipo de sitios web y
+                aplicaciones móviles.
+              </p>
+              <ul className="textexperience-list">
+                <li className="textexperience-list">Apify</li>
+                <li className="textexperience-list">Cheerio</li>
+                <li className="textexperience-list">
+                  Interfaz de programación DOM
+                </li>
+                <li className="textexperience-list">
+                  Conocimientos de vanilla Javascript.
+                </li>
+                <li className="textexperience-list">Typescript</li>
+                <li className="textexperience-list">
+                  Control de versiones con Git.
+                </li>
+                <li className="textexperience-list">
+                  Herramientas de comunicación y trabajo en equipo: Telegram,
+                  Trello, GitHub.
+                </li>
+              </ul>
+            </div>
+
             <div className="experience__contain">
               <div className="textexperience adalab">
                 <img className="imageadalab" src={imageadalab} alt="Adalab" />
@@ -332,6 +386,23 @@ function App() {
             </div>
 
             <div className="profile__container">
+              <li className="container__project">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://pokemons-beta.vercel.app/"
+                >
+                  <p className="descriptionproj">
+                    Buscador de Pokemons conectada a una API.
+                  </p>
+
+                  <img
+                    className="imageprofile"
+                    src={imagePokemons}
+                    alt="Pokemons"
+                  />
+                </a>
+              </li>
               <li className="container__project">
                 <a
                   rel="noreferrer"
@@ -496,7 +567,11 @@ function App() {
 
             <form action="" className="form">
               <div className="labelform">
-                <label htmlFor="" placeholder="ej. Maria Sanchez">
+                <label
+                  htmlFor=""
+                  placeholder="ej. Maria Sanchez"
+                  className="label"
+                >
                   Nombre completo
                 </label>
                 <input type="text" className="inputext" />
@@ -509,7 +584,7 @@ function App() {
               </div>
               <div className="labelform">
                 <label htmlFor="">Escribe un mensaje</label>
-                <textarea type="text" className="inputext" maxLength="200" />
+                <textarea type="text" className="inputext" rows="10" />
               </div>
               <button className="btnsent">Enviar</button>
             </form>
