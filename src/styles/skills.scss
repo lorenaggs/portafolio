@@ -1,0 +1,30 @@
+.skills__icons {
+  text-align: center;
+}
+
+.skills__icons-image {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.skills__icons-image:hover {
+  transform: scale(1.5);
+}
+
+.withskills {
+  height: 55px;
+  width: 80px;
+}
+
+@media all and (min-width: $tablet-width) {
+  .skills__icons-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .withskills {
+    width: 140px;
+  }
+}

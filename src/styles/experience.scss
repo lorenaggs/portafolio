@@ -1,0 +1,32 @@
+.experience__contain {
+  background: $color-white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.imageadalab {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.textexperience {
+  color: $color-black;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+.textexperience-list {
+  margin: 10px;
+  color: $color-black;
+  list-style-type: disc;
+}
+
+.date {
+  color: $color-grey;
+}
+
+.adalab {
+  display: flex;
+}

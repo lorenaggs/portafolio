@@ -1,0 +1,38 @@
+@import "./core/variables.scss";
+
+.icons {
+  bottom: 0;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.fa-brands {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.fa-brands:hover {
+  transform: scale(1.5);
+}
+
+.backtotop,
+.backicon {
+  color: $color-brown;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.textback {
+  margin-right: 10px;
+  color: $color-brown;
+}
+
+.btnback {
+  background: none;
+}

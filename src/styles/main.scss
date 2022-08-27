@@ -1,0 +1,21 @@
+.main {
+  margin: 3rem;
+  display: flex;
+}
+
+@media all and (min-width: $tablet-width) {
+  .main {
+    margin-right: 100px;
+    margin: 0rem 10rem;
+  }
+
+  .main__sections {
+    padding: 0rem 5rem;
+  }
+}
+
+@media all and (min-width: $desktop-width) {
+  .main__sections {
+    padding: 0rem 10rem;
+  }
+}

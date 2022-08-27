@@ -1,0 +1,89 @@
+.banner__text {
+  font-size: 25px;
+  font-size: 2.1rem;
+  position: relative;
+}
+
+.banner__text-write {
+  position: relative;
+  color: $color-brown;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner__text-write::after {
+  content: "";
+  border-left: 2px solid $color-white;
+  background: url("../images/background.png");
+  right: 0;
+  height: 100%;
+  position: absolute;
+  animation: maquinaescribir 2s infinite alternate steps(15);
+}
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.banner__image {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.banner__image-imageMe {
+  background-image: url("../images/imageprofile.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  height: 17rem;
+  width: 13rem;
+  margin-top: -45px;
+}
+
+.banner__image-imageprofile {
+  background: linear-gradient(180deg, $color-pink 0%, $color-blue 100%);
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+  margin-top: -20px;
+}
+
+@media all and (min-width: $tablet-width) {
+  .banner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .banner__image {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .banner__image-imageMe {
+    height: 20rem;
+    width: 15rem;
+    margin-top: -60px;
+  }
+
+  .banner__image-imageprofile {
+    width: 250px;
+    height: 250px;
+    margin-top: 0px;
+    left: 0;
+
+    margin-left: 50px;
+  }
+
+  .banner__iam {
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+    justify-content: center;
+  }
+}

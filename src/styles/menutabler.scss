@@ -1,0 +1,28 @@
+.menu__tablet {
+  display: none;
+}
+
+@media all and (min-width: $tablet-width) {
+  .menu__tablet {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90vh;
+    justify-content: space-evenly;
+  }
+
+  .menu__sections {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .menu__sections:hover {
+    transform: scale(1.5) rotate(-90deg);
+    color: $color-brown;
+  }
+}
