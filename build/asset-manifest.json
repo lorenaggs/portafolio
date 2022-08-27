@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.13902cff.css",
-    "main.js": "/static/js/main.da04d635.js",
+    "main.css": "/static/css/main.8d63fe48.css",
+    "main.js": "/static/js/main.5a138ca0.js",
     "static/media/background.png": "/static/media/background.65fe23e75290b0a08fe3.png",
     "static/media/awesomeprofile.png": "/static/media/awesomeprofile.6ea15eb47bb5e6c3ceb1.png",
     "static/media/openspaces.png": "/static/media/openspaces.b79f9e82f5282a0669cb.png",
     "static/media/aboutus.png": "/static/media/aboutus.2600d99ffb3aa6cb85b6.png",
+    "static/media/cheerio.png": "/static/media/cheerio.726efb09b63153c4c717.png",
     "static/media/imageprofile.png": "/static/media/imageprofile.ad6cf9e528b97d4da98e.png",
+    "static/media/pokemons.png": "/static/media/pokemons.e9a9aec6312a2614d770.png",
     "static/media/avatar.png": "/static/media/avatar.2ac44ea02afe5b5ead8c.png",
     "static/media/owenwilson.png": "/static/media/owenwilson.c2dc2d012bc1ed4288a9.png",
     "static/media/cocktails.png": "/static/media/cocktails.455640a737ff9dd94ce3.png",
@@ -32,11 +34,11 @@
     "static/media/git-ramas.svg": "/static/media/git-ramas.6d27b5e0cde4ddb87e031ca706aa8350.svg",
     "static/media/heroku.svg": "/static/media/heroku.68909cdaab8fd7949293dc7399eeb98b.svg",
     "static/media/npm.svg": "/static/media/npm.f5b70b3788cac843e2ccc5a829267807.svg",
-    "main.13902cff.css.map": "/static/css/main.13902cff.css.map",
-    "main.da04d635.js.map": "/static/js/main.da04d635.js.map"
+    "main.8d63fe48.css.map": "/static/css/main.8d63fe48.css.map",
+    "main.5a138ca0.js.map": "/static/js/main.5a138ca0.js.map"
   },
   "entrypoints": [
-    "static/css/main.13902cff.css",
-    "static/js/main.da04d635.js"
+    "static/css/main.8d63fe48.css",
+    "static/js/main.5a138ca0.js"
   ]
 }
