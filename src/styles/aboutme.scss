@@ -1,0 +1,39 @@
+.aboutme__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.aboutme__rectanglepink {
+  width: 25px;
+  height: 25px;
+  background: $color-pink;
+}
+.aboutme__rectangleblue {
+  width: 25px;
+  height: 25px;
+  background: $color-blue;
+  margin-top: 10px;
+}
+
+.aboutme__text {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.avatar {
+  display: none;
+}
+
+@media all and (min-width: $tablet-width) {
+  .aboutme {
+    display: flex;
+    justify-content: space-between;
+  }
+  .avatar {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    right: 0;
+  }
+}

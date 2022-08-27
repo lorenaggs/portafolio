@@ -1,0 +1,83 @@
+.contactme {
+  margin-bottom: 60px;
+}
+
+.contactme__circle {
+  background: linear-gradient(180deg, $color-pink 0%, $color-blue 100%);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+}
+
+.contactmenow {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+
+.contactme__text {
+  margin-left: -25px;
+}
+
+.contactme__textcolor {
+  color: $color-brown;
+  margin-left: -30px;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelform {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  align-content: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+// .labelform:focus-within label {
+//   transform: translate(0, -30px) scale(0.8);
+//   color: #ca3ea6;
+// }
+
+.label {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(10px);
+  transition: transform 0.25s;
+}
+
+.inputext {
+  color: $color-black;
+  padding: 10px;
+  margin: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, $color-pink 0%, $color-blue) 1;
+  font: inherit;
+  color: #fff;
+  background: transparent;
+  outline: 2px solid #fff;
+}
+
+.btnsent {
+  background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media all and (min-width: $desktop-width) {
+  .form {
+    margin: 0rem 10rem;
+  }
+}
