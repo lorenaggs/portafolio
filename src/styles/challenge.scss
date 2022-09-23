@@ -47,6 +47,9 @@
 }
 
 @media all and (min-width: $tablet-width) {
+  .profile {
+    margin-right: 5rem;
+  }
   .imageprofile .descriptionproj {
     height: 350px;
     width: 230px;

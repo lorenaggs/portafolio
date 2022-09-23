@@ -19,6 +19,10 @@
 }
 
 @media all and (min-width: $tablet-width) {
+  .skills {
+    margin-right: 5rem;
+  }
+
   .skills__icons-image {
     width: 80px;
     height: 80px;

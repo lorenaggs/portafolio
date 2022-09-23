@@ -17,9 +17,9 @@ import imageslack from "../images/slack.svg";
 import imagesqlite from "../images/sqlite.jpeg";
 import imagevsc from "../images/visualstudiocodelogo.png";
 import imagezeplin from "../images/zeplin.png";
-
 import apify from "../images/apify.png";
 import cheerio from "../images/cheerio.png";
+import golang from "../images/golang.svg";
 
 function Skills() {
   return (
@@ -152,6 +152,12 @@ function Skills() {
           src={cheerio}
           alt="Cheerio"
           title="Cheerio"
+        />
+        <img
+          className="skills__icons-image"
+          src={golang}
+          alt="Golang"
+          title="Golang"
         />
       </section>
     </section>

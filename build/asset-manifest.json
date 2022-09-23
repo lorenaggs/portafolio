@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.97002fc3.css",
-    "main.js": "/static/js/main.35d2f367.js",
+    "main.css": "/static/css/main.bd02fb21.css",
+    "main.js": "/static/js/main.b643f288.js",
     "static/media/background.png": "/static/media/background.65fe23e75290b0a08fe3.png",
     "static/media/awesomeprofile.png": "/static/media/awesomeprofile.6ea15eb47bb5e6c3ceb1.png",
     "static/media/openspaces.png": "/static/media/openspaces.b79f9e82f5282a0669cb.png",
@@ -22,6 +22,7 @@
     "static/media/html5.png": "/static/media/html5.84bcfd4da32878b04c12.png",
     "static/media/scrum.png": "/static/media/scrum.49331948cf2a2e5615f8.png",
     "static/media/visualstudiocodelogo.png": "/static/media/visualstudiocodelogo.9ba289c0ac35eff3554f.png",
+    "static/media/golang.svg": "/static/media/golang.6316b9da38310f48aed1fc9ce9c91bf5.svg",
     "static/media/css3.png": "/static/media/css3.fce2a3835b99b3846daf.png",
     "static/media/sass-original.svg": "/static/media/sass-original.fb123914eb0e5cc6e0a65e2928d89e2a.svg",
     "static/media/react-original-wordmark.svg": "/static/media/react-original-wordmark.7c8375868df8c536ab4f2d4078519904.svg",
@@ -34,11 +35,11 @@
     "static/media/git-ramas.svg": "/static/media/git-ramas.6d27b5e0cde4ddb87e031ca706aa8350.svg",
     "static/media/heroku.svg": "/static/media/heroku.68909cdaab8fd7949293dc7399eeb98b.svg",
     "static/media/npm.svg": "/static/media/npm.f5b70b3788cac843e2ccc5a829267807.svg",
-    "main.97002fc3.css.map": "/static/css/main.97002fc3.css.map",
-    "main.35d2f367.js.map": "/static/js/main.35d2f367.js.map"
+    "main.bd02fb21.css.map": "/static/css/main.bd02fb21.css.map",
+    "main.b643f288.js.map": "/static/js/main.b643f288.js.map"
   },
   "entrypoints": [
-    "static/css/main.97002fc3.css",
-    "static/js/main.35d2f367.js"
+    "static/css/main.bd02fb21.css",
+    "static/js/main.b643f288.js"
   ]
 }

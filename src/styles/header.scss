@@ -66,11 +66,21 @@
 }
 
 @media all and (min-width: $tablet-width) {
+  .header {
+    margin-left: 9rem;
+  }
+
   .iconmenu {
     display: none;
   }
 
   .menu__mobile {
     display: none;
+  }
+}
+
+@media all and (min-width: $desktop-width) {
+  .header {
+    padding: 3% 15%;
   }
 }
