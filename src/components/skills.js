@@ -20,6 +20,7 @@ import imagezeplin from "../images/zeplin.png";
 import apify from "../images/apify.png";
 import cheerio from "../images/cheerio.png";
 import golang from "../images/golang.svg";
+import typescript from "../images/typescript.png";
 
 function Skills() {
   return (
@@ -40,10 +41,47 @@ function Skills() {
         />
         <img
           className="skills__icons-image"
+          src={typescript}
+          alt="Icon TypeScript"
+          title="TypeScript"
+        />
+        <img
+          className="skills__icons-image"
           src={imagereact}
           alt="Icon React"
           title="React"
         />
+        <img
+          className="skills__icons-image"
+          src={imagenode}
+          alt="Icon Node"
+          title="Node"
+        />
+        <img
+          className="skills__icons-image"
+          src={imagenpm}
+          alt="Npm"
+          title="npm"
+        />
+        <img
+          className="skills__icons-image withskills"
+          src={imagesqlite}
+          alt="SQLite"
+          title="SQLite"
+        />
+        <img
+          className="skills__icons-image"
+          src={apify}
+          alt="Apify"
+          title="Apify"
+        />
+        <img
+          className="skills__icons-image"
+          src={cheerio}
+          alt="Cheerio"
+          title="Cheerio"
+        />
+
         <img
           className="skills__icons-image"
           src={imagecss}
@@ -56,12 +94,11 @@ function Skills() {
           alt="Icon Sass"
           title="Sass"
         />
-
         <img
           className="skills__icons-image"
-          src={imagenode}
-          alt="Icon Node"
-          title="Node"
+          src={imagehtml}
+          alt="Icon Html"
+          title="Html"
         />
         <img
           className="skills__icons-image"
@@ -75,12 +112,7 @@ function Skills() {
           alt="Git"
           title="Git"
         />
-        <img
-          className="skills__icons-image"
-          src={imagehtml}
-          alt="Icon Html"
-          title="Html"
-        />
+
         <img
           className="skills__icons-image"
           src={imagebootstrap}
@@ -111,12 +143,7 @@ function Skills() {
           alt="Heroku"
           title="Heroku"
         />
-        <img
-          className="skills__icons-image"
-          src={imagenpm}
-          alt="Npm"
-          title="npm"
-        />
+
         <img
           className="skills__icons-image"
           src={imagepostman}
@@ -135,29 +162,12 @@ function Skills() {
           alt="Scrum"
           title="Scrum"
         />
-        <img
-          className="skills__icons-image withskills"
-          src={imagesqlite}
-          alt="SQLite"
-          title="SQLite"
-        />
+
         <img
           className="skills__icons-image"
           src={imagevsc}
           alt="VSC"
           title="VSC"
-        />
-        <img
-          className="skills__icons-image"
-          src={apify}
-          alt="Apify"
-          title="Apify"
-        />
-        <img
-          className="skills__icons-image"
-          src={cheerio}
-          alt="Cheerio"
-          title="Cheerio"
         />
       </section>
     </section>
