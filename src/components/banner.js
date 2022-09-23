@@ -1,4 +1,4 @@
-function banner() {
+function Banner() {
   return (
     <section className="banner">
       <div className="banner__iam">
@@ -17,4 +17,4 @@ function banner() {
   );
 }
 
-export default banner;
+export default Banner;

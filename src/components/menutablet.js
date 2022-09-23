@@ -1,4 +1,4 @@
-function menutablet() {
+function Menutablet() {
   return (
     <nav className="menu__tablet">
       <a className="menu__sections" href="#contactme">
@@ -20,4 +20,4 @@ function menutablet() {
   );
 }
 
-export default menutablet;
+export default Menutablet;

@@ -2,7 +2,7 @@ import imageadalab from "../images/logo-adalab.png";
 import imageeos from "../images/eosecuador.jpeg";
 import imagealnusoft from "../images/alnusoft.jpeg";
 
-function experience() {
+function Experience() {
   return (
     <section className="experience" id="experience">
       <h2 className="title">Experience</h2>
@@ -100,4 +100,4 @@ function experience() {
   );
 }
 
-export default experience;
+export default Experience;
