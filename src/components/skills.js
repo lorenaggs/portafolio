@@ -21,7 +21,7 @@ import imagezeplin from "../images/zeplin.png";
 import apify from "../images/apify.png";
 import cheerio from "../images/cheerio.png";
 
-function skills() {
+function Skills() {
   return (
     <section className="skills" id="skills">
       <h2 className="title">Skills and tools</h2>
@@ -158,4 +158,4 @@ function skills() {
   );
 }
 
-export default skills;
+export default Skills;

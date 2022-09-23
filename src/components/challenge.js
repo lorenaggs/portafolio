@@ -10,7 +10,7 @@ import imageawesomeprofile from "../images/awesomeprofile.png";
 import imagecocktails from "../images/cocktails.png";
 import imagePokemons from "../images/pokemons.png";
 
-function challenge() {
+function Challenge() {
   return (
     <section className="profile" id="profile">
       <div className="profile__label">
@@ -179,4 +179,4 @@ function challenge() {
   );
 }
 
-export default challenge;
+export default Challenge;

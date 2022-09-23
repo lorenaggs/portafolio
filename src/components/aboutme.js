@@ -1,6 +1,6 @@
 import avatar from "../images/avatar.png";
 
-function aboutme() {
+function Aboutme() {
   return (
     <section className="aboutme" id="aboutme">
       <div className="aboutme__container">
@@ -20,4 +20,4 @@ function aboutme() {
   );
 }
 
-export default aboutme;
+export default Aboutme;
