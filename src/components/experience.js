@@ -15,7 +15,7 @@ function Experience() {
           </div>
         </div>
         <p className="textexperience">
-          Eztracción de datos web de todo tipo de sitios web y aplicaciones
+          Extracción de datos web de todo tipo de sitios web y aplicaciones
           móviles.
         </p>
         <ul className="textexperience-list">

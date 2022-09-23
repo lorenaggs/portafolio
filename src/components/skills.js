@@ -28,6 +28,18 @@ function Skills() {
       <section className="skills__icons">
         <img
           className="skills__icons-image"
+          src={golang}
+          alt="Golang"
+          title="Golang"
+        />
+        <img
+          className="skills__icons-image"
+          src={imagejavascript}
+          alt="Icon JavaScript"
+          title="JavaScript"
+        />
+        <img
+          className="skills__icons-image"
           src={imagereact}
           alt="Icon React"
           title="React"
@@ -43,12 +55,6 @@ function Skills() {
           src={imagesass}
           alt="Icon Sass"
           title="Sass"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagejavascript}
-          alt="Icon JavaScript"
-          title="JavaScript"
         />
 
         <img
@@ -152,12 +158,6 @@ function Skills() {
           src={cheerio}
           alt="Cheerio"
           title="Cheerio"
-        />
-        <img
-          className="skills__icons-image"
-          src={golang}
-          alt="Golang"
-          title="Golang"
         />
       </section>
     </section>
