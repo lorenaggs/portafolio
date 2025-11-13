@@ -30,7 +30,7 @@ body[data-theme="light"] .header {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .header__names {
@@ -56,6 +56,30 @@ body[data-theme="light"] .header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.languageToggle {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid $color-border;
+  background: rgba(14, 165, 233, 0.08);
+  color: var(--color-heading);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.languageToggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.15);
+  background: rgba(59, 130, 246, 0.15);
+}
+
+body[data-theme="light"] .languageToggle {
+  background: rgba(191, 219, 254, 0.6);
+  border-color: rgba(148, 163, 184, 0.35);
 }
 
 .themeToggle {

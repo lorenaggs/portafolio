@@ -1,7 +1,37 @@
 import React, { useEffect, useState } from "react";
 
-function Header({ theme, onToggleTheme }) {
+const labels = {
+  es: {
+    role: "Desarrolladora Frontend",
+    about: "Sobre mí",
+    skills: "Habilidades",
+    experience: "Experiencia",
+    achievements: "Logros",
+    portfolio: "Portafolio",
+    methodology: "Metodología",
+    testimonials: "Testimonios",
+    contact: "Contacto",
+    language: "ES",
+    languageAlt: "Cambiar a inglés",
+  },
+  en: {
+    role: "Frontend Developer",
+    about: "About",
+    skills: "Stack",
+    experience: "Experience",
+    achievements: "Highlights",
+    portfolio: "Portfolio",
+    methodology: "Methodology",
+    testimonials: "References",
+    contact: "Contact",
+    language: "EN",
+    languageAlt: "Cambiar a español",
+  },
+};
+
+function Header({ theme, language, onToggleTheme, onToggleLanguage }) {
   const [showMenu, setShowMenu] = useState(false);
+  const t = labels[language] ?? labels.es;
 
   const toggleScrollLock = (shouldLock) => {
     const method = shouldLock ? "add" : "remove";
@@ -33,9 +63,18 @@ function Header({ theme, onToggleTheme }) {
       <div className="header__brand">
         <div className="header__names">
           <h1 className="name">Lorena Guartazaca</h1>
-          <p className="header__role">Desarrolladora Frontend</p>
+          <p className="header__role">{t.role}</p>
         </div>
         <div className="header__actions">
+          <button
+            type="button"
+            className="languageToggle"
+            onClick={onToggleLanguage}
+            aria-label={t.languageAlt}
+            title={t.languageAlt}
+          >
+            {t.language}
+          </button>
           <button
             type="button"
             className="themeToggle"
@@ -56,22 +95,28 @@ function Header({ theme, onToggleTheme }) {
         </button>
         <nav className="menu__container">
           <a className="menu_mobilelist" href="#aboutme" onClick={handleGoSection}>
-            Sobre mí
+            {t.about}
           </a>
           <a className="menu_mobilelist" href="#skills" onClick={handleGoSection}>
-            Habilidades
+            {t.skills}
           </a>
           <a className="menu_mobilelist" href="#experience" onClick={handleGoSection}>
-            Experiencia
+            {t.experience}
+          </a>
+          <a className="menu_mobilelist" href="#methodology" onClick={handleGoSection}>
+            {t.methodology}
           </a>
           <a className="menu_mobilelist" href="#logros" onClick={handleGoSection}>
-            Logros
+            {t.achievements}
           </a>
           <a className="menu_mobilelist" href="#profile" onClick={handleGoSection}>
-            Portafolio
+            {t.portfolio}
+          </a>
+          <a className="menu_mobilelist" href="#testimonials" onClick={handleGoSection}>
+            {t.testimonials}
           </a>
           <a className="menu_mobilelist" href="#contactme" onClick={handleGoSection}>
-            Contacto
+            {t.contact}
           </a>
         </nav>
       </div>

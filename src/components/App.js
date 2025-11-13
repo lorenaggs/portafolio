@@ -9,34 +9,55 @@ import Challenge from "./challenge";
 import Menutablet from "./menutablet";
 import Contactme from "./contacme";
 import Header from "./header";
+import Methodology from "./methodology";
+import Testimonials from "./testimonials";
+import FloatingContacts from "./floatingcontacts";
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") ?? "dark");
+  const [language, setLanguage] = useState(() => localStorage.getItem("language") ?? "es");
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("lang", language);
+    localStorage.setItem("language", language);
+  }, [language]);
+
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "es" ? "en" : "es"));
+  };
+
   return (
     <>
-      <Header theme={theme} onToggleTheme={toggleTheme} />
+      <Header
+        theme={theme}
+        language={language}
+        onToggleTheme={toggleTheme}
+        onToggleLanguage={toggleLanguage}
+      />
+      <Banner language={language} />
+      <FloatingContacts language={language} />
       <main className="main">
         <div className="main__sections">
-          <Banner />
-          <Aboutme />
-          <Skills />
-          <Experience />
-          <Challenge />
-          <Menutablet />
-          <Contactme />
+          <Aboutme language={language} />
+          <Skills language={language} />
+          <Experience language={language} />
+          <Methodology language={language} />
+          <Challenge language={language} />
+          <Testimonials language={language} />
+          <Menutablet language={language} />
+          <Contactme language={language} />
         </div>
       </main>
-      <Footer />
+      <Footer language={language} />
     </>
   );
 }
