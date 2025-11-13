@@ -1,11 +1,10 @@
 const content = {
   es: {
-    intro: "Hola, soy",
-    title: "Frontend Lead especializada en microfrontends y Angular 18.",
-    summary:
-      "Impulso productos digitales que crecen sin perder velocidad: combino arquitectura modular, data-driven UX y equipos ágiles para lanzar funcionalidades de alto impacto en tiempo récord.",
+    intro: "Frontend Lead · Microfrontends",
+    title: "Arquitecturas modulares y escalables con Angular",
+    summary: "Diseño y lidero arquitecturas modulares basadas en microfrontends y Angular 18, aplicando principios de programación orientada a objetos con arquitectura hexagonal para garantizar sistemas escalables, mantenibles y preparados para la evolución. Alineo estrategia, arquitectura y UX para entregar plataformas modernas, accesibles y de alto rendimiento.",
     secondary:
-      "Angular 18 · Microfrontend · Module Federation · Serverless · Diseño accesible",
+      "Angular 18 · Microfrontends · Module Federation · Serverless · UX Data-Driven · Arquitectura limpia · Arquitectura hexagonal",
     primaryCta: "Agendar una reunión",
     primaryHref: "https://wa.me/593994607544",
     secondaryCta: "Descargar CV",
@@ -34,12 +33,11 @@ const content = {
     ],
   },
   en: {
-    intro: "Hi, I'm",
-    title: "Frontend Lead focused on microfrontends and AWS Serverless",
-    summary:
-      "I help digital products scale without slowing down by blending modular architecture, data-driven UX and agile teams to ship high-impact features fast.",
+    intro: "Frontend Lead · Microfrontends",
+    title: "Modular and scalable architectures with Angular",
+    summary:"I design and lead modular architectures based on microfrontends and Angular 18, applying object-oriented programming principles with hexagonal architecture to ensure scalable, maintainable systems that are ready to evolve. I align strategy, architecture, and UX to deliver modern, accessible, and high-performance platforms.",
     secondary:
-      "Angular 18 · Module Federation · Serverless · Accessible design",
+      "Angular 18 · Microfrontends · Module Federation · Serverless · UX Data-Driven · Clean Architecture · Hexagonal architecture",
     primaryCta: "Book a meeting",
     primaryHref: "https://cal.com/lorenaggs/30min",
     secondaryCta: "Download resume",
