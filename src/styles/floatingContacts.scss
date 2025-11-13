@@ -1,7 +1,7 @@
 .floating-contacts {
   position: fixed;
-  left: clamp(0.2rem, 4vw, 1rem);
-  bottom: clamp(1.4rem, 5vw, 2.8rem);
+  left: clamp(0.2rem, 4vw, 0.5rem);
+  bottom: 1.2rem;
   display: grid;
   gap: 0.85rem;
   z-index: 40;
@@ -49,7 +49,6 @@ body[data-theme="light"] .floating-contacts__button {
 @media all and (max-width: 640px) {
   .floating-contacts {
     right: 1rem;
-    bottom: 1rem;
   }
 
   .floating-contacts__button {

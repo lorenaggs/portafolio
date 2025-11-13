@@ -135,7 +135,7 @@ const dictionary = {
             {
                 title: "OpciónAuto Platform",
                 description:
-                    "End-to-end migration to Angular 18 microfrontends with Nx monorepos, module federation and realtime quoting.",
+                    "End-to-end migration to Angular microfrontends with Nx monorepos, module federation and realtime quoting.",
                 stack: "Angular · Nx · Pusher · Pusher · Microfrontend · Monorepos ",
                 url: "",
                 categories: ["microfrontends", "automation"],

@@ -40,8 +40,12 @@ body[data-theme="light"] .aboutme__highlight {
 }
 
 .aboutme__highlight p {
-  color: $color-grey;
+  color: rgba(226, 232, 240, 0.85);
   font-size: 0.95rem;
+}
+
+body[data-theme="light"] .aboutme__highlight p {
+  color: rgba(71, 85, 105, 0.85);
 }
 
 @media all and (min-width: $tablet-width) {

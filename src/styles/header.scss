@@ -131,6 +131,8 @@ body[data-theme="light"] .languageToggle {
   display: flex;
   flex-direction: column;
   animation: fadeIn 0.25s ease;
+  height: 100vh;
+  padding: 1rem;
 }
 
 body[data-theme="light"] .menu__mobile {
@@ -151,7 +153,7 @@ body[data-theme="light"] .menu__mobile {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 3vw, 1.6rem);
+  // gap: clamp(1rem, 2vw, 1.6rem);
   font-size: 1.4rem;
   padding: clamp(2.4rem, 6vw, 3.4rem) clamp(1.25rem, 4vw, 1.8rem);
   background:
@@ -159,10 +161,12 @@ body[data-theme="light"] .menu__mobile {
     rgba(2, 6, 15, 0.975);
   border: 1px solid rgba(148, 163, 184, 0.35);
   box-shadow: 0 30px 55px rgba(2, 6, 15, 0.55);
-  width: calc(100% - clamp(1.5rem, 5vw, 2.4rem));
-  min-height: clamp(480px, 83vh, 90vh);
-  max-height: calc(100% - clamp(1.8rem, 4vh, 3rem));
-  margin: clamp(0.6rem, 4vh, 1.5rem) auto clamp(1.2rem, 4vh, 2.2rem);
+  width: min(960px, calc(100% - clamp(1.5rem, 5vw, 2.4rem)));
+  flex: 1 1 auto;
+  height: calc(100% - clamp(0.8rem, 4vh, 1.6rem) * 2);
+  min-height: 0;
+  max-height: none;
+  margin: clamp(0.8rem, 4vh, 1.6rem) auto clamp(0.8rem, 4vh, 1.6rem);
   overflow-y: auto;
   border-radius: clamp(26px, 6vw, 40px);
 }
