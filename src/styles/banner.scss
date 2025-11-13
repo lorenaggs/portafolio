@@ -1,89 +1,110 @@
-.banner__text {
-  font-size: 25px;
-  font-size: 2.1rem;
-  position: relative;
+@import "./core/variables";
+
+.banner {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
 }
 
-.banner__text-write {
-  position: relative;
-  color: $color-brown;
-  overflow: hidden;
-  white-space: nowrap;
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 560px;
 }
 
-.banner__text-write::after {
-  content: "";
-  border-left: 2px solid $color-white;
-  background: url("../images/background.png");
-  right: 0;
-  height: 100%;
-  position: absolute;
-  animation: maquinaescribir 2s infinite alternate steps(15);
+.banner__intro {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  color: $color-grey;
 }
 
-@keyframes maquinaescribir {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
+.banner__headline {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--color-heading);
+}
+
+.banner__headline span {
+  color: $color-accent;
+}
+
+.banner__subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $color-muted;
+}
+
+.banner__summary {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.banner__cta {
+  align-self: flex-start;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, $color-pink 0%, $color-blue 100%);
+  color: $color-accent-contrast;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: $shadow-elevation;
+}
+
+.banner__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(79, 70, 229, 0.35);
 }
 
 .banner__image {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
+  justify-content: center;
 }
 
-.banner__image-imageMe {
+.banner__glow {
+  position: absolute;
+  inset: -30% -10% -40%;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.27) 0%, transparent 68%);
+  filter: blur(10px);
+}
+
+.banner__portrait {
+  position: relative;
+  width: clamp(220px, 45vw, 320px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid $color-border;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.35), rgba(14, 165, 233, 0.2));
+  box-shadow: $shadow-elevation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__portrait-image {
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
   background-image: url("../images/imageprofile.png");
-  background-size: 90%;
-  background-repeat: no-repeat;
-  height: 17rem;
-  width: 13rem;
-  margin-top: -45px;
-}
-
-.banner__image-imageprofile {
-  background: linear-gradient(180deg, $color-pink 0%, $color-blue 100%);
-  border-radius: 100%;
-  width: 220px;
-  height: 220px;
-  margin-top: -20px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 @media all and (min-width: $tablet-width) {
   .banner {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3.5rem;
   }
 
   .banner__image {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .banner__image-imageMe {
-    height: 20rem;
-    width: 15rem;
-    margin-top: -60px;
-  }
-
-  .banner__image-imageprofile {
-    width: 250px;
-    height: 250px;
-    margin-top: 0px;
-    left: 0;
-
-    margin-left: 50px;
-  }
-
-  .banner__iam {
-    display: flex;
-    flex-direction: column;
-    margin-left: -30px;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }

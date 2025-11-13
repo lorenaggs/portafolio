@@ -1,174 +1,51 @@
-import imagereact from "../images/react-original-wordmark.svg";
-import imagehtml from "../images/html5.png";
-import imagecss from "../images/css3.png";
-import imagesass from "../images/sass-original.svg";
-import imagejavascript from "../images/javascript-original.svg";
-import imagenode from "../images/node.png";
-import imagegithub from "../images/github.png";
-import imagebootstrap from "../images/bootstrap.svg";
-import imagefigma from "../images/figma.svg";
-import imagegitbranch from "../images/git-ramas.svg";
-import imagegulp from "../images/gulp.svg";
-import imageheroku from "../images/heroku.svg";
-import imagenpm from "../images/npm.svg";
-import imagepostman from "../images/postman.png";
-import imagescrum from "../images/scrum.png";
-import imageslack from "../images/slack.svg";
-import imagesqlite from "../images/sqlite.jpeg";
-import imagevsc from "../images/visualstudiocodelogo.png";
-import imagezeplin from "../images/zeplin.png";
-import apify from "../images/apify.png";
-import cheerio from "../images/cheerio.png";
-import golang from "../images/golang.svg";
-import typescript from "../images/typescript.png";
-
 function Skills() {
   return (
     <section className="skills" id="skills">
-      <h2 className="title">Skills and tools</h2>
-      <section className="skills__icons">
-        <img
-          className="skills__icons-image"
-          src={golang}
-          alt="Golang"
-          title="Golang"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagejavascript}
-          alt="Icon JavaScript"
-          title="JavaScript"
-        />
-        <img
-          className="skills__icons-image"
-          src={typescript}
-          alt="Icon TypeScript"
-          title="TypeScript"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagereact}
-          alt="Icon React"
-          title="React"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagenode}
-          alt="Icon Node"
-          title="Node"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagenpm}
-          alt="Npm"
-          title="npm"
-        />
-        <img
-          className="skills__icons-image withskills"
-          src={imagesqlite}
-          alt="SQLite"
-          title="SQLite"
-        />
-        <img
-          className="skills__icons-image"
-          src={apify}
-          alt="Apify"
-          title="Apify"
-        />
-        <img
-          className="skills__icons-image"
-          src={cheerio}
-          alt="Cheerio"
-          title="Cheerio"
-        />
-
-        <img
-          className="skills__icons-image"
-          src={imagecss}
-          alt="Icon Css"
-          title="Css"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagesass}
-          alt="Icon Sass"
-          title="Sass"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagehtml}
-          alt="Icon Html"
-          title="Html"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagegithub}
-          alt="Icon Github"
-          title="Github"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagegitbranch}
-          alt="Git"
-          title="Git"
-        />
-
-        <img
-          className="skills__icons-image"
-          src={imagebootstrap}
-          alt="Icon Bootstrap"
-          title="Bootstrap"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagefigma}
-          alt="Figma"
-          title="Figma"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagezeplin}
-          alt="Zeplin"
-          title="Zeplin"
-        />
-        <img
-          className="skills__icons-image"
-          src={imagegulp}
-          alt="Gulp"
-          title="Gulp"
-        />
-        <img
-          className="skills__icons-image"
-          src={imageheroku}
-          alt="Heroku"
-          title="Heroku"
-        />
-
-        <img
-          className="skills__icons-image"
-          src={imagepostman}
-          alt="Postman"
-          title="Postman"
-        />
-        <img
-          className="skills__icons-image"
-          src={imageslack}
-          alt="Slack"
-          title="Slack"
-        />
-        <img
-          className="skills__icons-image withskills"
-          src={imagescrum}
-          alt="Scrum"
-          title="Scrum"
-        />
-
-        <img
-          className="skills__icons-image"
-          src={imagevsc}
-          alt="VSC"
-          title="VSC"
-        />
+      <div className="section-heading">
+        <h2 className="section-heading__title">Habilidades & stack</h2>
+        <div className="section-heading__accent" />
+      </div>
+      <section className="skills__grid">
+        <article className="skills__card">
+          <h3 className="skills__card-title">Frontend</h3>
+          <ul className="skills__list">
+            <li>Angular 18, React 18</li>
+            <li>TypeScript, JavaScript (ES2023+)</li>
+            <li>State management con NgRx, Redux y RxJS</li>
+            <li>HTML5, CSS3, SCSS, Tailwind, Bootstrap</li>
+            <li>Microfrontends, Module Federation</li>
+          </ul>
+        </article>
+        <article className="skills__card">
+          <h3 className="skills__card-title">Backend & DevOps</h3>
+          <ul className="skills__list">
+            <li>Node.js, Express, REST APIs, JWT</li>
+            <li>PostgreSQL, MySQL, DynamoDB</li>
+            <li>AWS Lambda, API Gateway, S3</li>
+            <li>Serverless Framework, Docker</li>
+            <li>CI/CD con GitHub Actions</li>
+          </ul>
+        </article>
+        <article className="skills__card">
+          <h3 className="skills__card-title">Calidad & Colaboración</h3>
+          <ul className="skills__list">
+            <li>Testing con Jest, Jasmine y Postman</li>
+            <li>Linting y formateo (ESLint, Prettier)</li>
+            <li>Diseño UX/UI con Figma y accesibilidad WCAG</li>
+            <li>Metodologías ágiles (Scrum, Kanban)</li>
+            <li>Gestión con Git, Jira, Confluence</li>
+          </ul>
+        </article>
+        <article className="skills__card">
+          <h3 className="skills__card-title">Soft Skills</h3>
+          <ul className="skills__list">
+            <li>Liderazgo técnico y mentoring</li>
+            <li>Comunicación efectiva y storytelling</li>
+            <li>Resolución creativa de problemas</li>
+            <li>Aprendizaje continuo y curiosidad</li>
+            <li>Facilitación de ceremonias ágiles</li>
+          </ul>
+        </article>
       </section>
     </section>
   );

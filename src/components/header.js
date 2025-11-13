@@ -1,71 +1,81 @@
-import React, { useState } from "react";
-import { DataProvider } from "../context/DataContext";
+import React, { useEffect, useState } from "react";
 
-function Header() {
-  const [showMenu, setCloseMenu] = useState();
+function Header({ theme, onToggleTheme }) {
+  const [showMenu, setShowMenu] = useState(false);
 
-  const handleCloseMenu = () => {
-    setCloseMenu(!showMenu);
+  const toggleScrollLock = (shouldLock) => {
+    const method = shouldLock ? "add" : "remove";
+    document.body.classList[method]("no-scroll");
+    document.documentElement.classList[method]("no-scroll");
+  };
+
+  const handleToggleMenu = () => {
+    setShowMenu((prev) => {
+      const next = !prev;
+      toggleScrollLock(next);
+      return next;
+    });
   };
 
   const handleGoSection = () => {
-    handleCloseMenu();
+    setShowMenu(false);
+    toggleScrollLock(false);
   };
 
+  useEffect(() => {
+    return () => {
+      toggleScrollLock(false);
+    };
+  }, []);
+
   return (
-    <DataProvider>
-      <header className="header">
+    <header className="header" id="top">
+      <div className="header__brand">
         <div className="header__names">
-          <h1 className="name">Lorena</h1>
-          <h2 className="lastName">Guartazaca</h2>
+          <h1 className="name">Lorena Guartazaca</h1>
+          <p className="header__role">Desarrolladora Frontend</p>
         </div>
-        <button className="btnshow" onClick={handleCloseMenu}>
-          <i className="fa-solid fa-bars iconmenu"></i>
-        </button>
-        <div className={showMenu ? "menu__mobile" : "hidden"}>
-          <button className="btnclose" title="close" onClick={handleCloseMenu}>
-            <i className="fa-solid fa-x iconx"></i>
+        <div className="header__actions">
+          <button
+            type="button"
+            className="themeToggle"
+            onClick={onToggleTheme}
+            aria-label={`Cambiar a modo ${theme === "dark" ? "claro" : "oscuro"}`}
+            title={`Cambiar a modo ${theme === "dark" ? "claro" : "oscuro"}`}
+          >
+            <i className={`fa-solid ${theme === "dark" ? "fa-sun" : "fa-moon"}`} />
           </button>
-          <nav className="menu__container">
-            <a
-              className="menu_mobilelist"
-              href="#aboutme"
-              onClick={handleGoSection}
-            >
-              About_me
-            </a>
-            <a
-              className="menu_mobilelist"
-              href="#skills"
-              onClick={handleGoSection}
-            >
-              Skills
-            </a>
-            <a
-              className="menu_mobilelist"
-              href="#experience"
-              onClick={handleGoSection}
-            >
-              Experience
-            </a>
-            <a
-              className="menu_mobilelist"
-              href="#profile"
-              onClick={handleGoSection}
-            >
-              Portafolio
-            </a>
-            <a
-              className="menu_mobilelist"
-              href="#contactme"
-              onClick={handleGoSection}
-            >
-              Contact_me
-            </a>
-          </nav>
+          <button className="btnshow" onClick={handleToggleMenu} aria-expanded={showMenu}>
+            <i className="fa-solid fa-bars iconmenu"></i>
+          </button>
         </div>
-      </header>
-    </DataProvider>
+      </div>
+      <div className={showMenu ? "menu__mobile" : "hidden"}>
+        <button className="btnclose" title="Cerrar menú" onClick={handleToggleMenu}>
+          <i className="fa-solid fa-x iconx"></i>
+        </button>
+        <nav className="menu__container">
+          <a className="menu_mobilelist" href="#aboutme" onClick={handleGoSection}>
+            Sobre mí
+          </a>
+          <a className="menu_mobilelist" href="#skills" onClick={handleGoSection}>
+            Habilidades
+          </a>
+          <a className="menu_mobilelist" href="#experience" onClick={handleGoSection}>
+            Experiencia
+          </a>
+          <a className="menu_mobilelist" href="#logros" onClick={handleGoSection}>
+            Logros
+          </a>
+          <a className="menu_mobilelist" href="#profile" onClick={handleGoSection}>
+            Portafolio
+          </a>
+          <a className="menu_mobilelist" href="#contactme" onClick={handleGoSection}>
+            Contacto
+          </a>
+        </nav>
+      </div>
+    </header>
   );
 }
 

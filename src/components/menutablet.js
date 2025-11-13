@@ -2,19 +2,22 @@ function Menutablet() {
   return (
     <nav className="menu__tablet">
       <a className="menu__sections" href="#contactme">
-        contact
+        contacto
       </a>
       <a className="menu__sections" href="#profile">
         portafolio
       </a>
+      <a className="menu__sections" href="#logros">
+        logros
+      </a>
       <a className="menu__sections" href="#experience">
-        experience
+        experiencia
       </a>
       <a className="menu__sections" href="#skills">
-        skills
+        habilidades
       </a>
       <a className="menu__sections" href="#aboutme">
-        about_me
+        sobre mí
       </a>
     </nav>
   );

@@ -1,3 +1,5 @@
+@import "./core/variables";
+
 .menu__tablet {
   display: none;
 }
@@ -5,24 +7,68 @@
 @media all and (min-width: $tablet-width) {
   .menu__tablet {
     position: fixed;
+    top: 50%;
     right: 0;
-    top: 0;
+    height: 76vh;
     display: flex;
-    flex-direction: column-reverse;
-    height: 90vh;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    width: 60px;
+    padding: 0.4rem 0.6rem;
+    z-index: 10;
+    transform: translateY(-50%);
   }
 
   .menu__sections {
-    transform: rotate(-90deg);
-    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
     cursor: pointer;
+    color: $color-grey;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.65rem 0.3rem;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(15, 23, 42, 0.35);
+    transition: color 0.2s ease, border 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    text-align: center;
   }
 
   .menu__sections:hover {
-    transform: scale(1.5) rotate(-90deg);
-    color: $color-brown;
+    color: $color-accent;
+    border-color: rgba(148, 163, 184, 0.35);
+    background: rgba(59, 130, 246, 0.12);
+    transform: translateX(-4px);
+  }
+
+  body[data-theme="light"] .menu__sections {
+    background: rgba(148, 163, 184, 0.14);
+  }
+
+  @media all and (min-height: 768px) {
+    .menu__tablet {
+      gap: 1.1rem;
+    }
+  }
+
+  @media all and (max-height: 720px) {
+    .menu__tablet {
+      gap: 0.6rem;
+      height: 70vh;
+    }
+
+    .menu__sections {
+      font-size: 0.64rem;
+      letter-spacing: 0.2em;
+      padding: 0.55rem 0.25rem;
+    }
   }
 }

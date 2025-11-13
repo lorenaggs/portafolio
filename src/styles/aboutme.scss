@@ -1,39 +1,56 @@
-.aboutme__label {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
+@import "./core/variables";
 
-.aboutme__rectanglepink {
-  width: 25px;
-  height: 25px;
-  background: $color-pink;
-}
-.aboutme__rectangleblue {
-  width: 25px;
-  height: 25px;
-  background: $color-blue;
-  margin-top: 10px;
+.aboutme__grid {
+  display: grid;
+  gap: 2rem;
 }
 
 .aboutme__text {
-  font-size: 1.4rem;
-  text-align: justify;
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.7;
 }
-.avatar {
-  display: none;
+
+.aboutme__highlights {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.aboutme__highlight {
+  padding: 1.25rem 1.5rem;
+  border-radius: 22px;
+  border: 1px solid $color-border;
+  background: rgba(15, 23, 42, 0.45);
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+body[data-theme="light"] .aboutme__highlight {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.aboutme__highlight:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.aboutme__highlight h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: var(--color-heading);
+}
+
+.aboutme__highlight p {
+  color: $color-grey;
+  font-size: 0.95rem;
 }
 
 @media all and (min-width: $tablet-width) {
-  .aboutme {
-    display: flex;
-    justify-content: space-between;
+  .aboutme__grid {
+    align-items: flex-start;
   }
-  .avatar {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    right: 0;
+
+  .aboutme__highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
   }
 }

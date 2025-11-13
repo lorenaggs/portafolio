@@ -1,17 +1,26 @@
 function Banner() {
   return (
     <section className="banner">
-      <div className="banner__iam">
-        <div className="banner__text">
-          Soy&nbsp;
-          <span className="banner__text-write">una creativa.</span>
-        </div>
-        <p className="banner__text">desarrollara Frontend</p>
+      <div className="banner__content">
+        <p className="banner__intro">Hola, soy</p>
+        <h2 className="banner__headline">
+          Lorena Guartazaca
+        </h2>
+        <p className="banner__subtitle">Desarrolladora Frontend & Lideresa Técnica</p>
+        <p className="banner__summary">
+          Diseño y construyo experiencias web modernas enfocadas en escalabilidad, rendimiento y
+          accesibilidad. Disfruto resolver problemas complejos, liderar equipos y crear productos
+          digitales con impacto real.
+        </p>
+        <a className="banner__cta" href="#contactme">
+          Conversemos sobre tu proyecto
+        </a>
       </div>
       <section className="banner__image">
-        <section className="banner__image-imageprofile">
-          <div className="banner__image-imageMe"></div>
-        </section>
+        <div className="banner__glow"></div>
+        <div className="banner__portrait">
+          <div className="banner__portrait-image"></div>
+        </div>
       </section>
     </section>
   );

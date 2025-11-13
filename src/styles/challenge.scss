@@ -1,58 +1,135 @@
-.imageprofile {
-  width: 150px;
-  height: 250px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 20px;
+@import "./core/variables";
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.profile__label {
-  display: flex;
+.achievements__list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.achievements__item {
+  padding: 1.4rem 1.6rem;
+  border-radius: 20px;
+  border: 1px solid $color-border;
+  background: rgba(15, 23, 42, 0.5);
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+body[data-theme="light"] .achievements__item {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.achievements__item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(236, 72, 153, 0.4);
+}
+
+.achievements__item h3 {
+  font-size: 1.1rem;
+  color: var(--color-heading);
+  margin-bottom: 0.4rem;
+}
+
+.achievements__item p {
+  color: $color-grey;
+  font-size: 0.95rem;
+}
+
+.achievements__portfolio-heading {
   align-items: center;
-  justify-content: space-between;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: $color-brown;
-  padding: 15px 0px;
+.achievements__portfolio-heading a {
+  font-size: 1.8rem;
+  color: $color-accent;
+  transition: transform 0.2s ease;
 }
 
-.profile__container {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.achievements__portfolio-heading a:hover {
+  transform: scale(1.1);
 }
 
-.container__project {
-  cursor: pointer;
+.project__grid {
+  display: grid;
+  gap: 1.5rem;
 }
 
-.container__project:hover .descriptionproj {
-  display: flex;
-  transform: scale(1.07);
+.project__card {
+  border: 1px solid $color-border;
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(14, 165, 233, 0.1));
+  color: inherit;
+  transition: transform 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.descriptionproj {
-  display: none;
-  border-radius: 20px;
+.project__card::after {
+  content: "";
   position: absolute;
-  margin: 10px;
-  height: 250px;
-  width: 150px;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-6px);
+  box-shadow: $shadow-elevation;
+}
+
+.project__card:hover::after {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project__card-content {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project__card h3 {
+  font-size: 1.2rem;
+  color: var(--color-heading);
+}
+
+.project__card p {
+  color: var(--color-text);
+  opacity: 0.9;
+}
+
+.project__link {
+  display: inline-flex;
   align-items: center;
-  background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+  gap: 0.4rem;
+  color: $color-accent;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+}
+
+.project__link::after {
+  content: "→";
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.project__card:hover .project__link::after {
+  transform: translateX(4px);
 }
 
 @media all and (min-width: $tablet-width) {
-  .profile {
-    margin-right: 5rem;
+  .achievements__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .imageprofile .descriptionproj {
-    height: 350px;
-    width: 230px;
-    padding: 15px;
+
+  .project__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

@@ -1,9 +1,16 @@
-import "../styles/App.scss";
-
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <footer className="icons">
-      <div>
+    <footer className="footer">
+      <div className="footer__social">
         <a
           rel="noreferrer"
           target="_blank"
@@ -18,12 +25,13 @@ function Footer() {
         >
           <i className="fa-brands fa-whatsapp"></i>
         </a>
-      </div>
-      <button className="btnback">
-        <a className="backtotop" rel="noreferrer" href="/#">
-          <p className="textback">Back</p>
-          <i className="fa-solid fa-chevron-up backicon"></i>
+        <a rel="noreferrer" target="_blank" href="mailto:lorenaggs2812@gmail.com">
+          <i className="fa-solid fa-envelope"></i>
         </a>
+      </div>
+      <p className="footer__copy">© {currentYear} Lorena Guartazaca · Desarrolladora Frontend</p>
+      <button type="button" className="backtotop" onClick={handleScrollTop}>
+        <i className="fa-solid fa-chevron-up backicon"></i>
       </button>
     </footer>
   );

@@ -1,101 +1,74 @@
-import imageadalab from "../images/logo-adalab.png";
-import imageeos from "../images/eosecuador.jpeg";
-import imagealnusoft from "../images/alnusoft.jpeg";
-
 function Experience() {
   return (
     <section className="experience" id="experience">
-      <h2 className="title">Experience</h2>
-      <div className="experience__contain">
-        <div className="textexperience adalab">
-          <img className="imageadalab" src={imagealnusoft} alt="Alnusoft" />
+      <div className="section-heading">
+        <h2 className="section-heading__title">Experiencia profesional</h2>
+        <div className="section-heading__accent" />
+      </div>
+      <article className="experience__card">
+        <header className="experience__header">
           <div>
-            <h3 className="textexperience">Alnusoft - Desarrollo front-end</h3>
-            <p className="textexperience date">jul. 2022 - actualidad</p>
+            <h3>OpciónAuto · Desarrolladora Frontend</h3>
+            <p className="experience__meta">Mar 2023 – Presente · Quito, Ecuador</p>
           </div>
-        </div>
-        <p className="textexperience">
-          Extracción de datos web de todo tipo de sitios web y aplicaciones
-          móviles.
-        </p>
-        <ul className="textexperience-list">
-          <li className="textexperience-list">Apify</li>
-          <li className="textexperience-list">Cheerio</li>
-          <li className="textexperience-list">Interfaz de programación DOM</li>
-          <li className="textexperience-list">
-            Conocimientos de vanilla Javascript.
+          <span className="experience__stack">Angular · Module Federation · AWS</span>
+        </header>
+        <ul className="experience__bullet">
+          <li>
+            Lidero la migración de una plataforma monolítica a microfrontends con Angular 18 y
+            monorepositorios, reduciendo tiempos de despliegue en 30% y habilitando la entrega
+            independiente por vertical.
           </li>
-          <li className="textexperience-list">Typescript</li>
-          <li className="textexperience-list">Control de versiones con Git.</li>
-          <li className="textexperience-list">
-            Herramientas de comunicación y trabajo en equipo: Telegram, Trello,
-            GitHub.
+          <li>
+            Diseñé un sistema de mensajería omnicanal integrando Meta WhatsApp Business, Node.js y
+            Pusher para conectar asesores en tiempo real.
+          </li>
+          <li>
+            Implementé encuestas dinámicas y reportes analíticos para gerencia, elevando la tasa de
+            seguimiento comercial en 25%.
+          </li>
+          <li>
+            Desarrollé un gestor de publicidad con permisos segmentados y workflows de aprobación.
           </li>
         </ul>
-      </div>
-
-      <div className="experience__contain">
-        <div className="textexperience adalab">
-          <img className="imageadalab" src={imageadalab} alt="Adalab" />
+      </article>
+      <article className="experience__card">
+        <header className="experience__header">
           <div>
-            <h3 className="textexperience">Adalab - Desarrollo front-end</h3>
-            <p className="textexperience date">
-              feb. 2022 - may. 2022 • 4 meses
-            </p>
+            <h3>Grupo Transoceánica · Desarrolladora Fullstack</h3>
+            <p className="experience__meta">Ene 2023 – Mar 2023 · Quito, Ecuador</p>
           </div>
-        </div>
-        <p className="textexperience">
-          Programa integral de formación que aporta los conocimientos y
-          herramientas para el desarrollo web front-end.
-        </p>
-        <ul className="textexperience-list">
-          <li className="textexperience-list">
-            Maquetación: HTML5, CSS3, Flexbox, CSS Grid, diseño responsive,
-            SASS, animaciones y maquetación por componentes.
+          <span className="experience__stack">React · Node.js · PostgreSQL</span>
+        </header>
+        <ul className="experience__bullet">
+          <li>
+            Construí módulos de control de costos e importaciones con flujos de aprobación y
+            dashboards operativos.
           </li>
-          <li className="textexperience-list">
-            Frameworks de desarrollo web: Bootstrap.
-          </li>
-          <li className="textexperience-list">
-            Conocimientos de vanilla Javascript.
-          </li>
-          <li className="textexperience-list">
-            ES6 y creación de SPAs sencillas con React
-          </li>
-          <li className="textexperience-list">Control de versiones con Git.</li>
-          <li className="textexperience-list">
-            Experiencia en el desarrollo de proyectos usando metodologías ágiles
-            - SCRUM.
-          </li>
-          <li className="textexperience-list">
-            Herramientas de desarrollo: Atom, Gulp, Terminal.
-          </li>
-          <li className="textexperience-list">
-            Herramientas de comunicación y trabajo en equipo: Slack, Trello,
-            GitHub.
+          <li>
+            Implementé autenticación JWT, control de roles y servicios REST para integraciones con
+            sistemas externos.
           </li>
         </ul>
-      </div>
-      <div className="experience__contain">
-        <div className="textexperience adalab">
-          <img className="imageadalab" src={imageeos} alt="Adalab" />
+      </article>
+      <article className="experience__card">
+        <header className="experience__header">
           <div>
-            <h3 className="textexperience">
-              EcuadorQuest - Jefe de Operaciones
-            </h3>
-            <p className="textexperience date">ene. 2016 - actualidad</p>
+            <h3>Alnusoft (Bulgaria) · Desarrolladora Frontend</h3>
+            <p className="experience__meta">Ago 2022 – Dic 2022 · Remoto</p>
           </div>
-        </div>
-        <ul className="textexperience-list">
-          <li className="textexperience-list">
-            Manejo de sistemas electrónicos (facturación electrónica).
+          <span className="experience__stack">React · Apify · Cheerio</span>
+        </header>
+        <ul className="experience__bullet">
+          <li>
+            Construí herramientas de web scraping y visualización para marketplaces de e-commerce con
+            pipelines automatizados.
           </li>
-          <li className="textexperience-list">
-            Registros contables de ingresos, egresos, retenciones, asientos
-            contables de ajustes usando sistemas informáticos
+          <li>
+            Implementé dashboards de insights para equipos de marketing y analistas comerciales.
           </li>
         </ul>
-      </div>
+      </article>
     </section>
   );
 }

@@ -5,13 +5,24 @@ import ReCAPTCHA from "react-google-recaptcha";
 function Contactme() {
   const [captchaValid, setCaptchaValid] = useState(null);
   const [userValid, setUserValid] = useState(false);
+  const [formValues, setFormValues] = useState({
+    user_name: "",
+    user_email: "",
+    user_message: "",
+  });
 
   const captcha = useRef(null);
 
-  const onChange = () => {
-    if (captcha.current.getValue()) {
-      console.log("Hola");
-    }
+  const onChange = (value) => {
+    setCaptchaValid(Boolean(value));
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const sendMail = (event) => {
@@ -25,11 +36,21 @@ function Contactme() {
       );
       setUserValid(true);
       setCaptchaValid(true);
+      setFormValues({
+        user_name: "",
+        user_email: "",
+        user_message: "",
+      });
+      captcha.current.reset();
+      setCaptchaValid(null);
     } else {
       setUserValid(false);
       setCaptchaValid(false);
     }
   };
+
+  const isFormComplete = Object.values(formValues).every((value) => value.trim().length > 0);
+  const canSubmit = Boolean(isFormComplete && captchaValid);
 
   return (
     <section className="contactme" id="contactme">
@@ -37,37 +58,51 @@ function Contactme() {
         <div className="contactmenow">
           <section className="main_imageprofilecontac contactme__circle"></section>
           <h2 className="contactme__textcolor">
-            Contact me
-            {/* <span className="contactme__textcolor"> me now</span> */}
+              Conectemos
           </h2>
         </div>
       </div>
-      {!userValid && (
-        <form action="" className="form" onSubmit={sendMail}>
+      {!userValid ? (
+        <form className="form" onSubmit={sendMail}>
           <div className="labelform">
-            <label htmlFor="" placeholder="ej. Maria Sanchez" className="label">
+            <label className="label" htmlFor="user_name">
               Nombre completo
             </label>
-            <input type="text" className="inputext" name="user_name" required />
-          </div>
-          <div className="labelform">
-            <label htmlFor="" placeholder="ej. mariasanchez@hotmail.com">
-              Email
-            </label>
             <input
-              type="email"
+              id="user_name"
+              type="text"
               className="inputext"
-              name="user_email"
+              name="user_name"
+              value={formValues.user_name}
+              onChange={handleInputChange}
               required
             />
           </div>
           <div className="labelform">
-            <label htmlFor="">Escribe un mensaje</label>
-            <textarea
-              type="text"
+            <label className="label" htmlFor="user_email">
+              Email
+            </label>
+            <input
+              id="user_email"
+              type="email"
               className="inputext"
-              rows="10"
+              name="user_email"
+              value={formValues.user_email}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="labelform">
+            <label className="label" htmlFor="user_message">
+              Cuéntame sobre tu proyecto
+            </label>
+            <textarea
+              id="user_message"
+              className="inputext textarea"
+              rows="6"
               name="user_message"
+              value={formValues.user_message}
+              onChange={handleInputChange}
               required
             />
           </div>
@@ -79,17 +114,15 @@ function Contactme() {
             />
           </div>
           {captchaValid === false && (
-            <div className="error-captcha">
-              Por favor verifica que no eres un robot
-            </div>
+            <div className="error-captcha">Por favor verifica que no eres un robot.</div>
           )}
-          <button className="btnsent">Enviar</button>
+          <button className="btnsent" type="submit" disabled={!canSubmit}>
+            Enviar mensaje
+          </button>
         </form>
-      )}{
-        userValid && <p className="validateMsg">
-          Los datos han sido enviados correctamente
-        </p>
-      }
+      ) : (
+        <p className="validateMsg">¡Gracias! Me pondré en contacto contigo muy pronto.</p>
+      )}
     </section>
   );
 }

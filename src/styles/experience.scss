@@ -1,39 +1,70 @@
-.experience__contain {
-  background: $color-white;
-  border-radius: 10px;
-  // margin-top: 10px;
-  margin: 10px 20px;
-  padding: 5px;
-  //width: 100%;
-}
+@import "./core/variables";
 
-.imageadalab {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.textexperience {
-  color: $color-black;
-  text-align: justify;
-  margin: 10px 0px;
-}
-
-.textexperience-list {
-  margin: 10px;
-  color: $color-black;
-  list-style-type: disc;
-}
-
-.date {
-  color: $color-grey;
-}
-
-.adalab {
+.experience__card {
+  border: 1px solid $color-border;
+  border-radius: 24px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  background: rgba(15, 23, 42, 0.55);
+  box-shadow: $shadow-elevation;
   display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+body[data-theme="light"] .experience__card {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.experience__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(79, 70, 229, 0.45);
+}
+
+.experience__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.experience__header h3 {
+  color: var(--color-heading);
+  font-size: 1.2rem;
+}
+
+.experience__meta {
+  color: $color-grey;
+  font-size: 0.9rem;
+}
+
+.experience__stack {
+  align-self: flex-start;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $color-muted;
+}
+
+.experience__bullet {
+  display: grid;
+  gap: 0.75rem;
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: var(--color-text);
+}
+
+.experience__bullet li {
+  font-size: 0.98rem;
 }
 
 @media all and (min-width: $tablet-width) {
-  .experience {
-    margin-right: 5rem;
+  .experience__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }

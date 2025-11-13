@@ -1,17 +1,25 @@
+@import "./core/variables";
+
 .main {
-  margin: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1100px;
+}
+
+.main__sections {
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 @media all and (min-width: $tablet-width) {
   .main {
-    margin-right: 100px;
-    margin: 0rem 10rem;
+    padding: 5rem;
   }
 }
 
 @media all and (min-width: $desktop-width) {
-  .main__sections {
-    padding: 0rem 10rem;
+  .main {
+    padding: 3rem 0 6rem;
   }
 }

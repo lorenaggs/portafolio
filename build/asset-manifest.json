@@ -1,46 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd02fb21.css",
-    "main.js": "/static/js/main.df6cb1bb.js",
-    "static/media/background.png": "/static/media/background.65fe23e75290b0a08fe3.png",
-    "static/media/awesomeprofile.png": "/static/media/awesomeprofile.6ea15eb47bb5e6c3ceb1.png",
-    "static/media/openspaces.png": "/static/media/openspaces.b79f9e82f5282a0669cb.png",
-    "static/media/aboutus.png": "/static/media/aboutus.2600d99ffb3aa6cb85b6.png",
-    "static/media/cheerio.png": "/static/media/cheerio.726efb09b63153c4c717.png",
-    "static/media/imageprofile.png": "/static/media/imageprofile.ad6cf9e528b97d4da98e.png",
-    "static/media/pokemons.png": "/static/media/pokemons.e9a9aec6312a2614d770.png",
-    "static/media/avatar.png": "/static/media/avatar.2ac44ea02afe5b5ead8c.png",
-    "static/media/owenwilson.png": "/static/media/owenwilson.c2dc2d012bc1ed4288a9.png",
-    "static/media/cocktails.png": "/static/media/cocktails.455640a737ff9dd94ce3.png",
-    "static/media/phrasefriends.png": "/static/media/phrasefriends.cfdd3e3576e9cee28f9e.png",
-    "static/media/migrationjsreact.png": "/static/media/migrationjsreact.96d02fe063defa765da8.png",
-    "static/media/spotify.png": "/static/media/spotify.83b685fbab345f4c3184.png",
-    "static/media/backend.png": "/static/media/backend.a90ca77ff64f05178fb3.png",
-    "static/media/zeplin.png": "/static/media/zeplin.5f0972f3121666da7998.png",
-    "static/media/postman.png": "/static/media/postman.3ac4d7844e6d9a8023da.png",
-    "static/media/typescript.png": "/static/media/typescript.9c26f8b2a0484e2cb4f2.png",
-    "static/media/node.png": "/static/media/node.af56b7d79d462b998ebc.png",
-    "static/media/html5.png": "/static/media/html5.84bcfd4da32878b04c12.png",
-    "static/media/scrum.png": "/static/media/scrum.49331948cf2a2e5615f8.png",
-    "static/media/visualstudiocodelogo.png": "/static/media/visualstudiocodelogo.9ba289c0ac35eff3554f.png",
-    "static/media/golang.svg": "/static/media/golang.6316b9da38310f48aed1fc9ce9c91bf5.svg",
-    "static/media/css3.png": "/static/media/css3.fce2a3835b99b3846daf.png",
-    "static/media/sass-original.svg": "/static/media/sass-original.fb123914eb0e5cc6e0a65e2928d89e2a.svg",
-    "static/media/react-original-wordmark.svg": "/static/media/react-original-wordmark.7c8375868df8c536ab4f2d4078519904.svg",
-    "static/media/gulp.svg": "/static/media/gulp.5bbb8bba492611dd935fb462dfb32f68.svg",
-    "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
-    "static/media/slack.svg": "/static/media/slack.6fe16cc14d7849761fa44c57b5d45634.svg",
-    "static/media/javascript-original.svg": "/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
-    "static/media/figma.svg": "/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
+    "main.css": "/static/css/main.80e368d4.css",
+    "main.js": "/static/js/main.67121436.js",
+    "static/media/imageprofile.png": "/static/media/imageprofile.5fb6850765046042e12f.png",
     "index.html": "/index.html",
-    "static/media/git-ramas.svg": "/static/media/git-ramas.6d27b5e0cde4ddb87e031ca706aa8350.svg",
-    "static/media/heroku.svg": "/static/media/heroku.68909cdaab8fd7949293dc7399eeb98b.svg",
-    "static/media/npm.svg": "/static/media/npm.f5b70b3788cac843e2ccc5a829267807.svg",
-    "main.bd02fb21.css.map": "/static/css/main.bd02fb21.css.map",
-    "main.df6cb1bb.js.map": "/static/js/main.df6cb1bb.js.map"
+    "main.80e368d4.css.map": "/static/css/main.80e368d4.css.map",
+    "main.67121436.js.map": "/static/js/main.67121436.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd02fb21.css",
-    "static/js/main.df6cb1bb.js"
+    "static/css/main.80e368d4.css",
+    "static/js/main.67121436.js"
   ]
 }
